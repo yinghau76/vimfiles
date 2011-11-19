@@ -156,8 +156,6 @@ vmap <D-k> <M-k>
 " QuickFix
 nmap <LEADER>co :QFix<CR>
 nmap <LEADER>ct :call QFixToggle(1)<CR>
-nmap <LEADER>cp :cp<CR>
-nmap <LEADER>cn :cn<CR>
 command! -bang -nargs=? QFix call QFixToggle(<bang>0)
 
 function! QFixToggle(forced)
