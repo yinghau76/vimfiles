@@ -181,6 +181,11 @@ augroup END
 "default colorscheme
 colorscheme vividchalk
 
+" syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_quiet_warnings=1
+
 " standard status + git status
 set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r\ PWD:\ %{CurDir()}%=%-14.(%l,%c%V%)\ %P
 

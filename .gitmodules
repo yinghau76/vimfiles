@@ -55,3 +55,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/vim-syntastic"]
+	path = bundle/vim-syntastic
+	url = git://github.com/grayrest/vim-syntastic.git
