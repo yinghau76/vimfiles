@@ -13,8 +13,8 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "vim-rails"]
-	path = vim-rails
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
