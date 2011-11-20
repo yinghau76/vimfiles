@@ -50,7 +50,6 @@ set langmenu=none
 set mouse=a
 set printexpr=system('open\ -a\ Preview\ '.v:fname_in)\ +\ v:shell_error
 set termencoding=utf-8
-set visualbell
 
 set history=1000
 set undolevels=1000
