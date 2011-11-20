@@ -115,7 +115,7 @@ set wildmode=list:longest
 
 " vim: set ft=vim :
 " TagList
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd = system('which ctags')
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
