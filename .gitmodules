@@ -1,60 +1,63 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
-	url = git://github.com/tpope/vim-endwise.git
+	url = http://github.com/tpope/vim-endwise.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = http://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = http://github.com/tpope/vim-surround.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = http://github.com/tpope/vim-commentary.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
+	url = http://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
+	url = http://github.com/tpope/vim-rails.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = http://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vim-rvm"]
 	path = bundle/vim-rvm
-	url = git://github.com/tpope/vim-rvm.git
+	url = http://github.com/tpope/vim-rvm.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
+	url = http://github.com/tpope/vim-markdown.git
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
+	url = http://github.com/tpope/vim-vividchalk.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = http://github.com/tpope/vim-repeat.git
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
+	url = http://github.com/mileszs/ack.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = http://github.com/ervandew/supertab.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
+	url = http://github.com/msanders/snipmate.vim.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = http://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
+	url = http://git.wincent.com/command-t.git
 [submodule "snippets"]
 	path = snippets
-	url = git://github.com/scrooloose/snipmate-snippets.git
+	url = http://github.com/scrooloose/snipmate-snippets.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
-	url = git://github.com/sjl/gundo.vim.git
+	url = http://github.com/sjl/gundo.vim.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
-	url = git://github.com/Raimondi/delimitMate.git
+	url = http://github.com/Raimondi/delimitMate.git
 [submodule "bundle/vim-syntastic"]
 	path = bundle/vim-syntastic
-	url = git://github.com/grayrest/vim-syntastic.git
+	url = http://github.com/grayrest/vim-syntastic.git
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = http://github.com/Rip-Rip/clang_complete
