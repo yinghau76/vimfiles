@@ -205,3 +205,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 "improve autocomplete menu color
 "highlight Pmenu ctermbg=238 gui=bold
+
+" Objective-C
+autocmd FileType objc set ai sw=4 sts=4 et ts=4
