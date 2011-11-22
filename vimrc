@@ -128,7 +128,7 @@ map <LEADER>tl :TlistToggle<CR>
 map <LEADER>f :FufFile **/<CR>
 map <LEADER>g :FufTag<CR>
 map <LEADER>q :FufQuickfix<CR>
-map <LEADER>b :FufBuffer<CR>
+map <LEADER>r :FufBuffer<CR>
 
 " Ack
 nnoremap <LEADER>a :Ack <C-r><C-w><CR> 
@@ -136,11 +136,11 @@ nnoremap <LEADER>a :Ack <C-r><C-w><CR>
 " NERDTree
 map <LEADER>n :NERDTree<CR>
 
-" When pressing <leader>cd switch to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>
+" When pressing <LEADER>cd switch to the directory of the open buffer
+map <LEADER>cd :cd %:p:h<cr>
 
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+noremap <LEADER>rm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
