@@ -103,12 +103,15 @@ imap <D-Enter> <Esc>o
 
 " Buffer navigation
 nmap <D-[> :bp<CR>
+imap <D-[> <ESC>:bp<CR>
 nmap <D-]> :bn<CR>
-nmap <D-\> :bd<CR>
+imap <D-]> <ESC>:bn<CR>
+nmap <D-\> :quit<CR>
+imap <D-\> <ESC>:quit<CR>
 
 " Easy scrolling
-nmap <SPACE> <C-D>
-nmap <S-SPACE> <C-U>
+nmap <SPACE> <C-F>
+nmap <S-SPACE> <C-B>
 
 " Activate TAB auto-completion for file paths
 set wildmode=list:longest
@@ -183,7 +186,7 @@ colorscheme vividchalk
 
 " syntastic
 let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
+" let g:syntastic_auto_loc_list=1
 let g:syntastic_quiet_warnings=1
 
 " standard status + git status
@@ -195,7 +198,8 @@ function! CurDir()
 endfunction
 
 "different colorscheme for file types
-autocmd FileType java colorscheme slate
+" autocmd FileType java colorscheme slate
+" autocmd FileType java set foldmethod=syntax
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
@@ -208,3 +212,6 @@ autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 
 " Objective-C
 autocmd FileType objc set ai sw=4 sts=4 et ts=4
+
+" Octopress
+autocmd BufNewFile,BufRead */_posts/*.markdown set syntax=octopress
