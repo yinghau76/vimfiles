@@ -67,3 +67,6 @@
 [submodule "bundle/octopress"]
 	path = bundle/octopress
 	url = https://github.com/tangledhelix/vim-octopress.git
+[submodule "bundle/glsl"]
+	path = bundle/glsl
+	url = http://github.com/vim-scripts/glsl.vim
