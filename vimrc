@@ -103,11 +103,11 @@ imap <D-Enter> <Esc>o
 
 " Buffer navigation
 nmap <D-[> :bp<CR>
-imap <D-[> <ESC>:bp<CR>
+imap <D-[> <C-O>:bp<CR>
 nmap <D-]> :bn<CR>
-imap <D-]> <ESC>:bn<CR>
+imap <D-]> <C-O>:bn<CR>
 nmap <D-\> :quit<CR>
-imap <D-\> <ESC>:quit<CR>
+imap <D-\> <C-O>:quit<CR>
 
 " Easy scrolling
 nmap <SPACE> <C-F>
@@ -201,7 +201,7 @@ endfunction
 " autocmd FileType java colorscheme slate
 " autocmd FileType java set foldmethod=syntax
 
-"ruby
+" Ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
@@ -215,3 +215,103 @@ autocmd FileType objc set ai sw=4 sts=4 et ts=4
 
 " Octopress
 autocmd BufNewFile,BufRead */_posts/*.markdown set syntax=octopress
+
+" Toggle between .c (.cc, .cpp) and .h                          {{{2
+" ToggleHeader defined in $HOME/.vim/plugin/cpph.vim
+
+" Maybe these mappings should be moved into FT_C() ?
+map             <LEADER>h       :call ToggleHeader()<CR>
+map             <C-F6>          <LEADER>h
+imap            <C-F6>          <C-O><C-F6>
+
+" Function keys                                                 {{{2
+
+" <F2> = save
+map             <F2>            :update<CR>
+imap            <F2>            <C-O><F2>
+
+" <F3> = turn off search highlighting
+map             <F3>            :nohlsearch<CR>
+imap            <F3>            <C-O><F3>
+" <S-F3> = turn off location list
+map             <S-F3>            :lclose<CR>
+imap            <S-F3>            <C-O><S-F3>
+" <C-F3> = turn off quickfix
+map             <C-F3>            :cclose<CR>
+imap            <C-F3>            <C-O><C-F3>
+
+" <F4> = next error/grep match
+"" depends on plugin/quickloclist.vim
+map             <F4>            :FirstOrNextInList<CR>
+imap            <F4>            <C-O><F4>
+" <S-F4> = previous error/grep match
+map             <S-F4>          :PrevInList<CR>
+imap            <S-F4>          <C-O><S-F4>
+" <C-F4> = current error/grep match
+map             <C-F4>          :CurInList<CR>
+imap            <C-F4>          <C-O><C-F4>
+
+" <F5> Ack search
+map             <F5>            :Ack 
+imap            <F5>            <C-O><F5>
+
+" <F6> = switch files
+map             <F6>            <C-^>
+imap            <F6>            <C-O><F6>
+" <C-F6> = toggle .c/.h (see above) or code/test (see below)
+
+" <F7> = jump to tag/filename+linenumber in the clipboard
+map             <F7>            :ClipboardTest<CR>
+
+" <F8> = highlight identifier under cursor
+" (some file-type dependent autocommands redefine it)
+map             <F8>            :let @/='\<'.expand('<cword>').'\>'<bar>set hls<CR>
+
+" <F9> = make
+map             <F9>    :make<CR>
+imap            <F9>    <C-O><F9>
+
+" <F11> = toggle 'paste'
+set pastetoggle=<F11>
+
+" <F12> = show the Unicode name of the character under cursor
+map             <F12>           :UnicodeName<CR>
+" <S-F12> = show highlight group under cursor
+map             <S-F12>         :ShowHighlightGroup<CR>
+" <C-F12> = show syntax stack under cursor
+map             <C-F12>         :ShowSyntaxStack<CR>
+
+" Highlight group debugging                                     {{{2
+function! s:SynAttrs(id)
+  return ""
+    \ . (synIDattr(a:id, "font") != "" ? ' font:' . synIDattr(a:id, "font") : "")
+    \ . (synIDattr(a:id, "fg") != ""  ? ' fg:' . synIDattr(a:id, "fg") : "")
+    \ . (synIDattr(a:id, "bg") != ""  ? ' bg:' . synIDattr(a:id, "bg") : "")
+    \ . (synIDattr(a:id, "sp") != ""  ? ' sp:' . synIDattr(a:id, "sp") : "")
+    \ . (synIDattr(a:id, "bold") ? " bold" : "")
+    \ . (synIDattr(a:id, "italic") ? " italic" : "")
+    \ . (synIDattr(a:id, "reverse") ? " reverse" : "")
+    \ . (synIDattr(a:id, "standout") ? " standout" : "")
+    \ . (synIDattr(a:id, "underline") ? " underline" : "")
+    \ . (synIDattr(a:id, "undercurl") ? " undercurl" : "")
+endf
+function! s:ShowHighlightGroup()
+  let hi = synID(line("."), col("."), 1)
+  let trans = synID(line("."), col("."), 0)
+  let lo = synIDtrans(hi)
+  " In my experiments s:SynAttrs() always returns "" for hi and trans
+  echo "hi<" . synIDattr(hi, "name") . '>'
+    \ . s:SynAttrs(hi)
+    \ . ' trans<' . synIDattr(trans, "name") . '>'
+    \ . s:SynAttrs(trans)
+    \ . ' lo<' . synIDattr(lo, "name") . '>'
+    \ . s:SynAttrs(lo)
+endf
+function! s:ShowSyntaxStack()
+  for id in synstack(line("."), col("."))
+    echo printf("%-20s %s", synIDattr(id, "name"), s:SynAttrs(synIDtrans(id)))
+  endfor
+endf
+command! ShowHighlightGroup call s:ShowHighlightGroup()
+command! ShowSyntaxStack call s:ShowSyntaxStack()
+
