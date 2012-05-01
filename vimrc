@@ -182,7 +182,8 @@ augroup END
 "cmap w!! w !sudo tee % >/dev/null
 
 "default colorscheme
-colorscheme vividchalk
+"colorscheme vividchalk
+colorscheme torte
 
 " syntastic
 let g:syntastic_enable_signs=1
@@ -200,6 +201,9 @@ endfunction
 "different colorscheme for file types
 " autocmd FileType java colorscheme slate
 " autocmd FileType java set foldmethod=syntax
+
+" Java
+autocmd FileType java set ai sw=4 sts=4 et ts=4
 
 " Ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
