@@ -183,7 +183,8 @@ augroup END
 
 "default colorscheme
 "colorscheme vividchalk
-colorscheme torte
+"colorscheme torte
+colorscheme molokai
 
 " syntastic
 let g:syntastic_enable_signs=1
