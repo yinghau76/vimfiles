@@ -67,3 +67,6 @@
 [submodule "bundle/glsl"]
 	path = bundle/glsl
 	url = http://github.com/vim-scripts/glsl.vim
+[submodule "bundle/vim-ragtag"]
+	path = bundle/vim-ragtag
+	url = http://github.com/tpope/vim-ragtag.git
