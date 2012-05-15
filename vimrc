@@ -221,6 +221,9 @@ autocmd FileType objc set ai sw=4 sts=4 et ts=4
 " Octopress
 autocmd BufNewFile,BufRead */_posts/*.markdown set syntax=octopress
 
+" HTML
+autocmd FileType html set ai sw=2 sts=2 et
+
 " Toggle between .c (.cc, .cpp) and .h                          {{{2
 " ToggleHeader defined in $HOME/.vim/plugin/cpph.vim
 
