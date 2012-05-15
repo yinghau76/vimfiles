@@ -242,21 +242,17 @@ imap            <F2>            <C-O><F2>
 map             <F3>            :nohlsearch<CR>
 imap            <F3>            <C-O><F3>
 " <S-F3> = turn off location list
-map             <S-F3>            :lclose<CR>
-imap            <S-F3>            <C-O><S-F3>
-" <C-F3> = turn off quickfix
-map             <C-F3>            :cclose<CR>
-imap            <C-F3>            <C-O><C-F3>
+map             <S-F3>          :lclose<CR>
+imap            <S-F3>          <C-O><S-F3>
 
-" <F4> = next error/grep match
-"" depends on plugin/quickloclist.vim
-map             <F4>            :FirstOrNextInList<CR>
+" <F4> = next quick fix
+map             <F4>            :cn<CR>
 imap            <F4>            <C-O><F4>
-" <S-F4> = previous error/grep match
-map             <S-F4>          :PrevInList<CR>
+" <S-F4> = prev quick fix
+map             <S-F4>          :cp<CR>
 imap            <S-F4>          <C-O><S-F4>
-" <C-F4> = current error/grep match
-map             <C-F4>          :CurInList<CR>
+" <C-F4> = turn off quickfix
+map             <C-F4>          :cclose<CR>
 imap            <C-F4>          <C-O><C-F4>
 
 " <F5> Ack search
