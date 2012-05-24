@@ -9,6 +9,7 @@ The following plugins are installed so far:
 - ack.vim
 - bufexplorer
 - command-t
+- ctrlp
 - delimitMate
 - fuf
 - gundo
@@ -26,3 +27,4 @@ The following plugins are installed so far:
 - vim-surround
 - vim-unimpaired
 - vim-vividchalk
+- vim-powerline

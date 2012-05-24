@@ -76,3 +76,9 @@
 [submodule "bundle/zencoding-vim"]
 	path = bundle/zencoding-vim
 	url = http://github.com/mattn/zencoding-vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = http://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = http://github.com/Lokaltog/vim-powerline.git
