@@ -82,3 +82,6 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = http://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/vim-gemfile"]
+	path = bundle/vim-gemfile
+	url = http://github.com/tobiassvn/vim-gemfile.git
