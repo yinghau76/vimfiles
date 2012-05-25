@@ -1,5 +1,3 @@
-"set guifont=Menlo:h15
-set guifont=Consolas:h16
 set guitablabel=%M%t
 " error bell off and no screen flash
 set vb t_vb=
@@ -9,6 +7,8 @@ if has("gui_macvim")
   " disable IM while leaving insert mode
   "autocmd InsertEnter * set noimdisable
   "autocmd InsertLeave * set imdisable
+
+  set guifont=Menlo\ Regular\ for\ Powerline:h15
 
 endif
 
@@ -48,4 +48,3 @@ function! TogglePresentationMode()
 endfunction
 
 map <LEADER>z :call TogglePresentationMode()<CR>
-
