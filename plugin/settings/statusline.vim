@@ -1,5 +1,7 @@
 " Always show status bar
 set laststatus=2
 
-" Powerline settings
-let g:Powerline_symbols = 'fancy'
+if has('mac')
+    " Powerline settings
+    let g:Powerline_symbols = 'fancy'
+endif
