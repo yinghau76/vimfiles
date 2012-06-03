@@ -40,9 +40,8 @@ imap <D-]> <C-O>:bn<CR>
 nmap <D-\> :bd<CR>
 imap <D-\> <C-O>:bd<CR>
 
-" Easy scrolling
-nmap <SPACE> <C-F>
-nmap <S-SPACE> <C-B>
+" Insert space easily
+nmap <SPACE> i<SPACE>
 
 "Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
