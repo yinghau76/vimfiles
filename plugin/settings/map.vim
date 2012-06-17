@@ -43,7 +43,7 @@ imap <D-\> <C-O>:bd<CR>
 " Insert space easily
 nmap <SPACE> i<SPACE>
 
-"Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
@@ -52,3 +52,7 @@ nmap <D-j> <M-j>
 nmap <D-k> <M-k>
 vmap <D-j> <M-j>
 vmap <D-k> <M-k>
+
+" Allow to insert semicolon without moving to the end of line. Good for
+" editing in C-like-syntax language.
+inoremap ;; <C-o>A;
