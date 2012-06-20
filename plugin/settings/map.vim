@@ -29,7 +29,7 @@ nmap <D-v> "*P
 " Open new line with D-Enter
 nmap <D-Enter> o
 imap <D-Enter> <Esc>o
-map <CR> o<Esc>
+"map <CR> o<Esc>
 map <S-Enter> O<Esc>
 
 " Buffer navigation
