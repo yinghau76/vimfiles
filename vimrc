@@ -56,3 +56,14 @@ let mapleader=","
 "colorscheme torte
 colorscheme molokai
 
+" clang_compelte: open qfix window automatically
+let g:clang_complete_copen = 1 
+
+" avoid loading matchparen plugin
+let loaded_matchparen = 1
+
+" 2-space indent for zencoding
+let g:user_zen_settings = {
+\  'indentation' : '  '
+\}
+
