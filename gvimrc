@@ -5,10 +5,11 @@ set vb t_vb=
 if has("gui_macvim")
 
   " disable IM while leaving insert mode
-  "autocmd InsertEnter * set noimdisable
-  "autocmd InsertLeave * set imdisable
+  " autocmd InsertEnter * set noimdisable
+  " autocmd InsertLeave * set imdisable
 
-  set guifont=Menlo\ Regular\ for\ Powerline:h15
+  " set guifont=Menlo\ Regular\ for\ Powerline:h15
+  set guifont=Inconsolata-dz\ for\ Powerline:h15
 
 endif
 
