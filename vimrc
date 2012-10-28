@@ -5,7 +5,7 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugin
 
 " Pathogen setup
-call pathogen#infect() 
+call pathogen#infect()
 call pathogen#helptags()
 
 set background=dark
@@ -44,7 +44,7 @@ set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
-set expandtab 
+set expandtab
 set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 
@@ -57,7 +57,7 @@ let mapleader=","
 colorscheme molokai
 
 " clang_compelte: open qfix window automatically
-let g:clang_complete_copen = 1 
+let g:clang_complete_copen = 1
 
 " avoid loading matchparen plugin
 let loaded_matchparen = 1
@@ -67,3 +67,4 @@ let g:user_zen_settings = {
 \  'indentation' : '  '
 \}
 
+behave mswin
