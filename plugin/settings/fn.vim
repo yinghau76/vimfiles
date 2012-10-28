@@ -5,7 +5,7 @@ map             <F2>            :update<CR>
 imap            <F2>            <C-O><F2>
 
 " <F3> = turn off search highlighting
-map             <F3>            :nohlsearch<CR>
+map             <F3>            :BufExplorer<CR>
 imap            <F3>            <C-O><F3>
 " <S-F3> = turn off location list
 map             <S-F3>          :lclose<CR>
@@ -53,4 +53,10 @@ map             <S-F12>         :ShowHighlightGroup<CR>
 " <C-F12> = show syntax stack under cursor
 map             <C-F12>         :ShowSyntaxStack<CR>
 
+map             <F13>    :bd<CR>
+imap            <F13>    <C-O><F13>
+map             <F14>    :bp<CR>
+imap            <F14>    <C-O><F14>
+map             <F15>    :bn<CR>
+imap            <F15>    <C-O><F15>
 
