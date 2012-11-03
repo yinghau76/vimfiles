@@ -9,7 +9,9 @@ if has("gui_macvim")
   " autocmd InsertLeave * set imdisable
 
   " set guifont=Menlo\ Regular\ for\ Powerline:h15
-  set guifont=Inconsolata-dz\ for\ Powerline:h15
+  "set guifont=Inconsolata-dz\ for\ Powerline:h15
+  " set guifont=Inconsolata-dz\ for\ Powerline:h14
+  set guifont=Menlo\ Regular\ for\ Powerline:h14
 
 endif
 
