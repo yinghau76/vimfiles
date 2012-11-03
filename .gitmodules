@@ -42,7 +42,7 @@
 	url = http://github.com/kchmck/vim-coffee-script.git
 [submodule "snippets"]
 	path = snippets
-	url = http://github.com/scrooloose/snipmate-snippets.git
+	url = http://github.com/yinghau76/snipmate-snippets.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = http://github.com/Raimondi/delimitMate.git
