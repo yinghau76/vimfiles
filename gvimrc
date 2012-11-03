@@ -3,17 +3,18 @@ set guitablabel=%M%t
 set vb t_vb=
 
 if has("gui_macvim")
+  let g:my_guifont="Inconsolata for Powerline:h17"
+elseif has("gui_gtk")
+  let g:my_guifont="Monospace 14" " for ubuntu
+end
 
-  " disable IM while leaving insert mode
-  " autocmd InsertEnter * set noimdisable
-  " autocmd InsertLeave * set imdisable
+let &guifont=g:my_guifont
 
-  " set guifont=Menlo\ Regular\ for\ Powerline:h15
-  "set guifont=Inconsolata-dz\ for\ Powerline:h15
-  " set guifont=Inconsolata-dz\ for\ Powerline:h14
-  set guifont=Menlo\ Regular\ for\ Powerline:h14
-
-endif
+if has("gui_macvim")
+  let g:my_guifont_large="Monaco:h25"          " for Mac
+elseif has("gui_gtk")
+  let g:my_guifont_large="Monospace 22"        " for ubuntu
+end
 
 " toggle between working mode and presentation mode
 " borrowed from skalnik(https://github.com/skalnik)
@@ -21,19 +22,11 @@ endif
 " font size change only work for GUI-version Vim
 
 function! PresentationModeOn()
-  if has("gui_macvim")
-    set guifont=Monaco:h25           " for Mac
-  elseif has("gui_gtk")
-    set guifont=Monospace\ 22        " for ubuntu
-  end
+  let &guifont=g:my_guifont_large
 endfunction
 
 function! PresentationModeOff()
-  if has("gui_macvim")
-    set guifont=Consolas:h16         " for Mac
-  elseif has("gui_gtk")
-    set guifont=Monospace\ 14        " for ubuntu
-  end
+  let &guifont=g:my_guifont
 endfunction
 
 function! TogglePresentationMode()
