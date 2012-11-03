@@ -1,3 +1,8 @@
+" Usage:
+"   compiler checkstyle
+"
+" Remember to: setlocal makeprg=...
+"
 if exists("current_compiler")
   finish
 endif
