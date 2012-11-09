@@ -37,6 +37,7 @@ set incsearch     " show search matches as you type
 
 set nobackup
 set noswapfile
+set autowriteall  " auto save file when switching buffers
 
 " tab and indent settings
 set softtabstop=4
