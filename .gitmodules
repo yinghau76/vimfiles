@@ -34,15 +34,9 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = http://github.com/mileszs/ack.vim.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = http://github.com/yinghau76/snipmate.vim.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = http://github.com/kchmck/vim-coffee-script.git
-[submodule "snippets"]
-	path = snippets
-	url = http://github.com/yinghau76/snipmate-snippets.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = http://github.com/Raimondi/delimitMate.git
@@ -94,6 +88,3 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = http://github.com/derekwyatt/vim-scala.git
-[submodule "bundle/snipmate-plus"]
-	path = bundle/snipmate-plus
-	url = http://github.com/acevery/snipmate-plus.git
