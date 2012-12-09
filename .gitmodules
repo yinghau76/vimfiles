@@ -88,3 +88,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = http://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = http://github.com/yinghau76/ultisnips.git
