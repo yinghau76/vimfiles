@@ -94,3 +94,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = http://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/snipmate-plus"]
+	path = bundle/snipmate-plus
+	url = http://github.com/acevery/snipmate-plus.git
