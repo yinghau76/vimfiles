@@ -91,3 +91,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = http://github.com/yinghau76/ultisnips.git
+[submodule "bundle/snipmate-snippets-rubymotion"]
+	path = bundle/snipmate-snippets-rubymotion
+	url = http://github.com/rcyrus/snipmate-snippets-rubymotion.git
