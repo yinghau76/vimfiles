@@ -94,3 +94,6 @@
 [submodule "bundle/snipmate-snippets-rubymotion"]
 	path = bundle/snipmate-snippets-rubymotion
 	url = http://github.com/rcyrus/snipmate-snippets-rubymotion.git
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = http://github.com/tpope/vim-rake.git
