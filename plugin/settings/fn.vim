@@ -22,7 +22,7 @@ map             <C-F4>          :cclose<CR>
 imap            <C-F4>          <C-O><C-F4>
 
 " <F5> Ack search
-map             <F5>            :Ack 
+map             <F5>            :shell<CR>
 imap            <F5>            <C-O><F5>
 
 " <F6> = switch files
