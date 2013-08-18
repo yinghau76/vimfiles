@@ -1,7 +1,3 @@
-" Treat long lines as break lines (useful when moving around in them)
-map j gj
-map k gk
-
 " Mac key mapping
 noremap! <D-Left> <Home>
 noremap! <M-Left> <C-Left>
