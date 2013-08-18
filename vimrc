@@ -4,6 +4,12 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugin
 
+" If you are using ZSH you may find that MacVim is not loading your rvm configuration correctly. This may be
+" because you are sourcing the rvm scripts in your .zshrc file. MacVim does not source the .zshrc file, but
+" will source the .zshenv file. To ensure that MacVim correctly loads rvm for its shell, and running ruby
+" commands, source the rvm scripts from withing .zshenv. Alternatively, you can add:
+set shell=/bin/sh
+
 " Pathogen setup
 call pathogen#infect()
 call pathogen#helptags()
