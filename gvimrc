@@ -3,7 +3,7 @@ set guitablabel=%M%t
 set vb t_vb=
 
 if has("gui_macvim")
-  let g:my_guifont="Inconsolata for Powerline:h17"
+  let g:my_guifont="Consolas for Powerline:h17"
 elseif has("gui_gtk")
   let g:my_guifont="Monospace 14" " for ubuntu
 end
