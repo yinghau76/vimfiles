@@ -97,3 +97,6 @@
 [submodule "bundle/vim-rake"]
 	path = bundle/vim-rake
 	url = http://github.com/tpope/vim-rake.git
+[submodule "bundle/vim-slim"]
+	path = bundle/vim-slim
+	url = http://github.com/slim-template/vim-slim.git
