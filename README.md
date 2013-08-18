@@ -1,30 +1,5 @@
-Patrick's vimrc
-===============
+This is my vim configuration hosted on GitHub. I use it to maintain consistent vim configuration on different machines, majorly Linux and Mac OS X.
 
-plugins
--------
+#### How it is organized
 
-The following plugins are installed so far:
-
-- ack.vim
-- bufexplorer
-- command-t
-- ctrlp
-- delimitMate
-- fuf
-- gundo
-- nerdtree
-- snipmate.vim
-- supertab
-- taglist
-- vim-coffee-script
-- vim-commentary
-- vim-endwise
-- vim-fugitive
-- vim-markdown
-- vim-repeat
-- vim-rvm
-- vim-surround
-- vim-unimpaired
-- vim-vividchalk
-- vim-powerline
+I use patheogen by the famous Tim Pope to maintain various plugins. Some plugins are maintained in their own Git repositories and managed by git submodules.
