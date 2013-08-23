@@ -11,12 +11,7 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.java :call DeleteTrailingWS()
-autocmd BufWrite *.ruby :call DeleteTrailingWS()
-autocmd BufWrite *.html :call DeleteTrailingWS()
-autocmd BufWrite *.coffee :call DeleteTrailingWS()
-autocmd BufWrite *.js :call DeleteTrailingWS()
-autocmd BufWrite *.scala :call DeleteTrailingWS()
+autocmd BufWrite * :call DeleteTrailingWS()
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
