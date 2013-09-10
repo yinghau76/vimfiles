@@ -1,6 +1,50 @@
 set nocompatible
+filetype off          " Disabled for Vundle
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Raimondi/delimitMate'
+Bundle 'Rip-Rip/clang_complete'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'ervandew/supertab'
+Bundle 'gmarik/vundle'
+Bundle 'grayrest/vim-syntastic'
+Bundle 'groenewege/vim-less'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/zencoding-vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'rcyrus/snipmate-snippets-rubymotion'
+Bundle 'rstacruz/sparkup'
+Bundle 'scrooloose/nerdtree'
+Bundle 'slim-template/vim-slim'
+Bundle 'tangledhelix/vim-octopress'
+Bundle 'tobiassvn/vim-gemfile'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-rvm'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/ZoomWin'
+Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'vim-scripts/camelcasemotion'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/mru.vim'
+Bundle 'yinghau76/ultisnips'
+
 syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugin
 
@@ -9,10 +53,6 @@ filetype plugin on    " Enable filetype-specific plugin
 " will source the .zshenv file. To ensure that MacVim correctly loads rvm for its shell, and running ruby
 " commands, source the rvm scripts from withing .zshenv. Alternatively, you can add:
 set shell=/bin/sh
-
-" Pathogen setup
-call pathogen#infect()
-call pathogen#helptags()
 
 set background=dark
 set backspace=indent,eol,start
@@ -58,9 +98,7 @@ set smarttab      " insert tabs on the start of a line according to
 " change the mapleader from \ to ,
 let mapleader=","
 
-"default colorscheme
-"colorscheme vividchalk
-"colorscheme torte
+" default colorscheme
 colorscheme molokai
 
 " clang_compelte: open qfix window automatically
