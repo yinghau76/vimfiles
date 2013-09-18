@@ -44,9 +44,8 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
 Bundle 'yinghau76/ultisnips'
 
-syntax on             " Enable syntax highlighting
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugin
+filetype plugin indent on " Enable filetype-specific plugin and indenting
+syntax on " Enable syntax highlighting
 
 " If you are using ZSH you may find that MacVim is not loading your rvm configuration correctly. This may be
 " because you are sourcing the rvm scripts in your .zshrc file. MacVim does not source the .zshrc file, but
