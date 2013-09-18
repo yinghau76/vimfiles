@@ -30,7 +30,8 @@ nmap <D-v> "*P
 nmap <D-Enter> o
 imap <D-Enter> <Esc>o
 "map <CR> o<Esc>
-map <S-Enter> O<Esc>
+nmap <S-Enter> O<Esc>
+imap <S-Enter> <C-O>O
 
 " Buffer navigation
 nmap <D-[> :bp<CR>
