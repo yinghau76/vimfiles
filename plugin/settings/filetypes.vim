@@ -21,4 +21,8 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
+" Recognize Gradle
 au BufNewFile,BufRead *.gradle setf groovy
+
+" Build go program
+autocmd Filetype go set makeprg=go\ build
