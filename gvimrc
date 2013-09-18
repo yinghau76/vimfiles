@@ -5,7 +5,7 @@ set vb t_vb=
 if has("gui_macvim")
   let g:my_guifont="Consolas for Powerline:h17"
 elseif has("gui_gtk")
-  let g:my_guifont="Monospace 14" " for ubuntu
+  let g:my_guifont="Monospace 12" " for ubuntu
 end
 
 let &guifont=g:my_guifont
