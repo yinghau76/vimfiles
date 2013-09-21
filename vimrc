@@ -4,6 +4,7 @@ filetype off          " Disabled for Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'Blackrush/vim-gocode'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Raimondi/delimitMate'
@@ -14,12 +15,10 @@ Bundle 'gmarik/vundle'
 Bundle 'grayrest/vim-syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'jnwhiteh/vim-golang'
-Bundle 'Blackrush/vim-gocode'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'mileszs/ack.vim'
-Bundle 'rcyrus/snipmate-snippets-rubymotion'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'slim-template/vim-slim'
