@@ -26,3 +26,4 @@ au BufNewFile,BufRead *.gradle setf groovy
 
 " Build go program
 autocmd Filetype go set makeprg=go\ build
+au FileType go setl ts=4
