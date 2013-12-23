@@ -18,6 +18,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/zencoding-vim'
+Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'mileszs/ack.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
@@ -43,6 +44,7 @@ Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
 Bundle 'yinghau76/ultisnips'
+Bundle 'jgdavey/vim-blockle'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting
