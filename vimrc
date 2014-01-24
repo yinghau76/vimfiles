@@ -6,7 +6,7 @@ call vundle#rc()
 
 Bundle 'Blackrush/vim-gocode'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'derekwyatt/vim-scala'
@@ -45,6 +45,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
 Bundle 'yinghau76/ultisnips'
 Bundle 'jgdavey/vim-blockle'
+Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting

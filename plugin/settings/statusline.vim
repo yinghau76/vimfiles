@@ -16,12 +16,18 @@ endfunction
 
 let os = GetRunningOS()
 
-" Powerline settings
-if os == "mac"
-    let g:Powerline_symbols = 'fancy'
-else
-    set t_Co=256
-    "let g:Powerline_symbols = 'compatible'
-    let g:Powerline_dividers_override = ['>>', '|', '| ', '|']
+" Airline settings
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
 endif
-
+if os == "mac"
+  let g:airline_left_sep = '⮀'
+  let g:airline_left_alt_sep = '⮁'
+  let g:airline_right_sep = '⮂'
+  let g:airline_right_alt_sep = '⮃'
+  let g:airline_symbols.branch = '⭠'
+  let g:airline_symbols.readonly = '⭤'
+  let g:airline_symbols.linenr = '⭡'
+endif
+let g:airline_detect_paste=1
+let g:airline#extensions#tabline#enabled = 1
