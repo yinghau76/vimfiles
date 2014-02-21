@@ -1,29 +1,11 @@
 " Function keys                                                 {{{2
 
 " <F2> = save
-nmap            <F2>            :update<CR>
-imap            <F2>            <C-O><F2>
+nmap            <F2>            :BufExplorer<CR>
+nmap            <F3>            :NERDTreeToggle<CR>
+nmap            <F4>            :TagbarToggle<CR>
 
-" <F3> = turn off search highlighting
-nmap            <F3>            :BufExplorer<CR>
-imap            <F3>            <C-O><F3>
-" <S-F3> = turn off location list
-nmap            <S-F3>          :lclose<CR>
-imap            <S-F3>          <C-O><S-F3>
-
-" <F4> = next quick fix
-nmap            <F4>            :cn<CR>
-imap            <F4>            <C-O><F4>
-" <S-F4> = prev quick fix
-nmap            <S-F4>          :cp<CR>
-imap            <S-F4>          <C-O><S-F4>
-" <C-F4> = turn off quickfix
-nmap            <C-F4>          :cclose<CR>
-imap            <C-F4>          <C-O><C-F4>
-
-" <F5> Ack search
-nmap            <F5>            :shell<CR>
-imap            <F5>            <C-O><F5>
+nmap            <F5>            :make<CR>:copen<CR>
 
 " <F6> = switch files
 nmap            <F6>            <C-^>
