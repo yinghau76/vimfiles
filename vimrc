@@ -43,7 +43,6 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
-Bundle 'yinghau76/ultisnips'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 
@@ -113,5 +112,7 @@ let loaded_matchparen = 1
 let g:user_zen_settings = {
 \  'indentation' : '  '
 \}
+
+let g:SuperTabDefaultCompletionType = "context"
 
 behave mswin
