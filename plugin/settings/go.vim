@@ -1,3 +1,20 @@
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+au BufWritePost *.go silent! !ctags -R &.
+au Filetype go set makeprg=go\ build\ ./...
+
+function! s:GoVet()
+    cexpr system("go vet " . shellescape(expand('%')))
+    copen
+endfunction
+command! GoVet :call s:GoVet()
+
+
+function! s:GoLint()
+    cexpr system("golint " . shellescape(expand('%')))
+    copen
+endfunction
+command! GoLint :call s:GoLint()
+
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [
