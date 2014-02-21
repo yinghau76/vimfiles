@@ -1,10 +1,5 @@
 " File-type specific settings
 
-au BufRead,BufNewFile *.ninja set filetype=ninja
-
-" Use ggVGgq to format the entire file
-au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\ 2>/dev/null
-
 " Delete trailing white space on save
 func! DeleteTrailingWS()
   exe "normal mz"
@@ -23,4 +18,10 @@ set viminfo^=%
 
 " Recognize Gradle
 au BufNewFile,BufRead *.gradle setf groovy
+
+" Ninja
+au BufRead,BufNewFile *.ninja set filetype=ninja
+
+" Use ggVGgq to format the entire file
+au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\ 2>/dev/null
 

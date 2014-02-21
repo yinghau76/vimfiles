@@ -74,6 +74,8 @@ set nowrap        " don't wrap lines
 set number        " always show line numbers
 set showmatch     " set show matching parenthesis
 
+set laststatus=2  " always show status bar
+
 set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase,
                   "    case-sensitive otherwise

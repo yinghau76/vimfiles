@@ -1,21 +1,3 @@
-" Always show status bar
-set laststatus=2
-
-function! GetRunningOS()
-  if has("win32")
-    return "win"
-  endif
-  if has("unix")
-    if system('uname')=~'Darwin'
-      return "mac"
-    else
-      return "linux"
-    endif
-  endif
-endfunction
-
-let os = GetRunningOS()
-
 " Airline settings
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
