@@ -1,13 +1,13 @@
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 au BufWritePost *.go silent! !ctags -R &.
 au Filetype go set makeprg=go\ build\ ./...
+au FileType go setl ts=4
 
 function! s:GoVet()
     cexpr system("go vet " . shellescape(expand('%')))
     copen
 endfunction
 command! GoVet :call s:GoVet()
-
 
 function! s:GoLint()
     cexpr system("golint " . shellescape(expand('%')))
