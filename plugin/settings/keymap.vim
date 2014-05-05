@@ -27,10 +27,10 @@ vmap <D-v> "-d"*P
 nmap <D-v> "*P
 
 " Arrow keys to switch between Vim window splits easily
-nmap <Up> :wincmd k<CR>
-nmap <Down> :wincmd j<CR>
-nmap <Left> :wincmd h<CR>
-nmap <Right> :wincmd l<CR>
+"nmap <Up> :wincmd k<CR>
+"nmap <Down> :wincmd j<CR>
+"nmap <Left> :wincmd h<CR>
+"nmap <Right> :wincmd l<CR>
 
 " Open new line after and before current line
 nmap <D-Enter> o
