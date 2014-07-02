@@ -42,6 +42,7 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
+Bundle 'vim-scripts/argtextobj.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 
