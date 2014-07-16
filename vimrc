@@ -14,8 +14,9 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'Blackrush/vim-gocode'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'derekwyatt/vim-scala'
@@ -27,13 +28,12 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/zencoding-vim'
+Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'mileszs/ack.vim'
-Bundle 'rcyrus/snipmate-snippets-rubymotion'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'slim-template/vim-slim'
 Bundle 'tangledhelix/vim-octopress'
-Bundle 'tobiassvn/vim-gemfile'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
@@ -52,11 +52,12 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
-Bundle 'yinghau76/ultisnips'
+Bundle 'vim-scripts/argtextobj.vim'
+Bundle 'jgdavey/vim-blockle'
+Bundle 'majutsushi/tagbar'
 
-syntax on             " Enable syntax highlighting
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugin
+filetype plugin indent on " Enable filetype-specific plugin and indenting
+syntax on " Enable syntax highlighting
 
 " If you are using ZSH you may find that MacVim is not loading your rvm configuration correctly. This may be
 " because you are sourcing the rvm scripts in your .zshrc file. MacVim does not source the .zshrc file, but
@@ -83,6 +84,8 @@ set showcmd
 set nowrap        " don't wrap lines
 set number        " always show line numbers
 set showmatch     " set show matching parenthesis
+
+set laststatus=2  " always show status bar
 
 set ignorecase    " ignore case when searching
 set smartcase     " ignore case if search pattern is all lowercase,
@@ -121,5 +124,7 @@ let loaded_matchparen = 1
 let g:user_zen_settings = {
 \  'indentation' : '  '
 \}
+
+let g:SuperTabDefaultCompletionType = "context"
 
 behave mswin

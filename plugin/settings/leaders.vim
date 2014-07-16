@@ -28,3 +28,5 @@ nnoremap <LEADER>7 :7b<CR>
 nnoremap <LEADER>8 :8b<CR>
 nnoremap <LEADER>9 :9b<CR>
 nnoremap <LEADER>0 :10b<CR>
+
+nnoremap <LEADER>a :Ack <C-r><C-w><CR>

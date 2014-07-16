@@ -1,6 +1,6 @@
 set guitablabel=%M%t
-" error bell off and no screen flash
-set vb t_vb=
+set vb t_vb= " error bell off and no screen flash
+
 
 if has("gui_macvim")
   let g:my_guifont="Consolas for Powerline:h17"

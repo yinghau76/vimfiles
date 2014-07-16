@@ -26,19 +26,17 @@ vmap <D-c> "*y
 vmap <D-v> "-d"*P
 nmap <D-v> "*P
 
-" Open new line with D-Enter
-nmap <D-Enter> o
-imap <D-Enter> <Esc>o
-"map <CR> o<Esc>
-map <S-Enter> O<Esc>
+" Arrow keys to switch between Vim window splits easily
+"nmap <Up> :wincmd k<CR>
+"nmap <Down> :wincmd j<CR>
+"nmap <Left> :wincmd h<CR>
+"nmap <Right> :wincmd l<CR>
 
-" Buffer navigation
-nmap <D-[> :bp<CR>
-imap <D-[> <C-O>:bp<CR>
-nmap <D-]> :bn<CR>
-imap <D-]> <C-O>:bn<CR>
-nmap <D-\> :bd<CR>
-imap <D-\> <C-O>:bd<CR>
+" Open new line after and before current line
+nmap <D-Enter> o
+imap <D-Enter> <C-O>o
+nmap <S-Enter> O<Esc>
+imap <S-Enter> <C-O>O
 
 " Insert space easily
 nmap <SPACE> i<SPACE>
@@ -55,4 +53,4 @@ vmap <D-k> <M-k>
 
 " Allow to insert semicolon without moving to the end of line. Good for
 " editing in C-like-syntax language.
-noremap ; A;
+" noremap ; A;
