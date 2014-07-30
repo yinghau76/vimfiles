@@ -30,3 +30,4 @@ nnoremap <LEADER>9 :9b<CR>
 nnoremap <LEADER>0 :10b<CR>
 
 nnoremap <LEADER>a :Ack <C-r><C-w><CR>
+nnoremap <LEADER>be :BufExplorer<CR>
