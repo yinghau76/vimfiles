@@ -53,6 +53,7 @@ Bundle 'vim-scripts/argtextobj.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'maxbrunsfeld/vim-yankstack'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting

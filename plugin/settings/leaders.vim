@@ -18,16 +18,7 @@ map <LEADER>h :call ToggleHeader()<CR>
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
-nnoremap <LEADER>1 :1b<CR>
-nnoremap <LEADER>2 :2b<CR>
-nnoremap <LEADER>3 :3b<CR>
-nnoremap <LEADER>4 :4b<CR>
-nnoremap <LEADER>5 :5b<CR>
-nnoremap <LEADER>6 :6b<CR>
-nnoremap <LEADER>7 :7b<CR>
-nnoremap <LEADER>8 :8b<CR>
-nnoremap <LEADER>9 :9b<CR>
-nnoremap <LEADER>0 :10b<CR>
-
 nnoremap <LEADER>a :Ack <C-r><C-w><CR>
 nnoremap <LEADER>be :BufExplorer<CR>
+
+map <leader>tb :TagbarToggle<CR>
