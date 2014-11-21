@@ -14,17 +14,14 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'Blackrush/vim-gocode'
+Bundle 'fatih/vim-go'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bling/vim-airline'
 Bundle 'Raimondi/delimitMate'
-Bundle 'Rip-Rip/clang_complete'
 Bundle 'derekwyatt/vim-scala'
-Bundle 'ervandew/supertab'
 Bundle 'gmarik/vundle'
 Bundle 'grayrest/vim-syntastic'
 Bundle 'groenewege/vim-less'
-Bundle 'jnwhiteh/vim-golang'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
@@ -55,6 +52,7 @@ Bundle 'vim-scripts/mru.vim'
 Bundle 'vim-scripts/argtextobj.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
+Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting
