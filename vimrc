@@ -54,7 +54,6 @@ Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'ConradIrwin/vim-bracketed-paste'
-Bundle 'maxbrunsfeld/vim-yankstack'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting
