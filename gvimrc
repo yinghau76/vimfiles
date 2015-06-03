@@ -43,3 +43,8 @@ function! TogglePresentationMode()
 endfunction
 
 map <LEADER>z :call TogglePresentationMode()<CR>
+
+" Hide right scrollbar, menu, and toolbar
+set guioptions-=r
+set guioptions-=m
+set guioptions-=T

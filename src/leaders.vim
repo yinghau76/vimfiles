@@ -22,3 +22,9 @@ nnoremap <LEADER>a :Ack <C-r><C-w><CR>
 nnoremap <LEADER>be :BufExplorer<CR>
 
 map <leader>tb :TagbarToggle<CR>
+
+" Shortcuts to quit
+nmap <LEADER>q :q<CR>
+nmap <LEADER>Q :qa!<CR>
+
+nmap <LEADER>w :w!<CR>
