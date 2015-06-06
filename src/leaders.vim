@@ -1,8 +1,6 @@
-nmap <silent> <LEADER>/ :nohlsearch<CR>
-
 " Quickly edit/reload the vimrc file
-nmap <silent> <LEADER>ev :tabe $HOME/.vim/vimrc<CR>
-nmap <silent> <LEADER>sv :so $MYVIMRC<CR>
+nmap <SLIENT> <LEADER>ev :tabe $HOME/.vim/vimrc<CR>
+nmap <SLIENT> <LEADER>sv :so $MYVIMRC<CR>
 
 " Alternative for 'set autochdir'
 nnoremap <LEADER>cd :cd %:p:h<CR>:pwd<CR>
@@ -16,9 +14,21 @@ map <LEADER>h :call ToggleHeader()<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+map <LEADER>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
-nnoremap <LEADER>a :Ack <C-r><C-w><CR>
+nnoremap <LEADER>/ :Ack <C-r><C-w><CR>
 nnoremap <LEADER>be :BufExplorer<CR>
 
-map <leader>tb :TagbarToggle<CR>
+map <LEADER>tb :TagbarToggle<CR>
+
+" Quickly open file
+nnoremap <LEADER>o :CtrlP<CR>
+
+" Save file
+nnoremap <LEADER>w :w<CR>
+
+" Close file
+nnoremap <LEADER>q :bd<CR>
+
+" Enter visual line mode easily
+nmap <LEADER><LEADER> V

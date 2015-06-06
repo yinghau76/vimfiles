@@ -54,6 +54,7 @@ Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'ConradIrwin/vim-bracketed-paste'
+Bundle 'terryma/vim-expand-region'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting
@@ -108,7 +109,7 @@ set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 
 " change the mapleader from \ to ,
-let mapleader=","
+let mapleader="\<Space>"
 
 " default colorscheme
 colorscheme molokai
@@ -606,9 +607,6 @@ imap <D-Enter> <C-O>o
 nmap <S-Enter> O<Esc>
 imap <S-Enter> <C-O>O
 
-" Insert space easily
-nmap <SPACE> i<SPACE>
-
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
@@ -623,13 +621,15 @@ vmap <D-k> <M-k>
 " editing in C-like-syntax language.
 " noremap ; A;
 
+" Region expanding
+map v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
 " ## leaders.vim ##
 
-nmap <silent> <LEADER>/ :nohlsearch<CR>
-
 " Quickly edit/reload the vimrc file
-nmap <silent> <LEADER>ev :tabe $HOME/.vim/vimrc<CR>
-nmap <silent> <LEADER>sv :so $MYVIMRC<CR>
+nmap <SLIENT> <LEADER>ev :tabe $HOME/.vim/vimrc<CR>
+nmap <SLIENT> <LEADER>sv :so $MYVIMRC<CR>
 
 " Alternative for 'set autochdir'
 nnoremap <LEADER>cd :cd %:p:h<CR>:pwd<CR>
@@ -643,12 +643,24 @@ map <LEADER>h :call ToggleHeader()<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+map <LEADER>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
-nnoremap <LEADER>a :Ack <C-r><C-w><CR>
+nnoremap <LEADER>/ :Ack <C-r><C-w><CR>
 nnoremap <LEADER>be :BufExplorer<CR>
 
-map <leader>tb :TagbarToggle<CR>
+map <LEADER>tb :TagbarToggle<CR>
+
+" Quickly open file
+nnoremap <LEADER>o :CtrlP<CR>
+
+" Save file
+nnoremap <LEADER>w :w<CR>
+
+" Close file
+nnoremap <LEADER>q :bd<CR>
+
+" Enter visual line mode easily
+nmap <LEADER><LEADER> V
 
 " ## nerdtree.vim ##
 

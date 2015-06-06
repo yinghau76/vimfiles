@@ -38,9 +38,6 @@ imap <D-Enter> <C-O>o
 nmap <S-Enter> O<Esc>
 imap <S-Enter> <C-O>O
 
-" Insert space easily
-nmap <SPACE> i<SPACE>
-
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
@@ -54,3 +51,7 @@ vmap <D-k> <M-k>
 " Allow to insert semicolon without moving to the end of line. Good for
 " editing in C-like-syntax language.
 " noremap ; A;
+
+" Region expanding
+map v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
