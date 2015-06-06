@@ -2,4 +2,4 @@ This is my vim configuration hosted on GitHub. I use it to maintain consistent v
 
 #### How it is organized
 
-[Patheogen](https://github.com/tpope/vim-pathogen) by the famous Tim Pope is used to maintain various plugins. Some plugins are maintained in their own Git repositories and managed by git submodules.
+It was originally organized with [Patheogen](https://github.com/tpope/vim-pathogen) and migrated to [Vundle](https://github.com/gmarik/Vundle.vim).

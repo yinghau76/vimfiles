@@ -2,7 +2,7 @@ set guitablabel=%M%t
 set vb t_vb= " error bell off and no screen flash
 
 if has("gui_macvim")
-  let g:my_guifont="Consolas:h17"
+  let g:my_guifont="Office Code Pro:h17"
 elseif has("gui_gtk")
   let g:my_guifont="Monospace 12" " for ubuntu
 end
@@ -43,3 +43,8 @@ function! TogglePresentationMode()
 endfunction
 
 map <LEADER>z :call TogglePresentationMode()<CR>
+
+" Hide right scrollbar, menu, and toolbar
+set guioptions-=r
+set guioptions-=m
+set guioptions-=T

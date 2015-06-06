@@ -32,3 +32,7 @@ nnoremap <LEADER>q :bd<CR>
 
 " Enter visual line mode easily
 nmap <LEADER><LEADER> V
+
+" Shortcuts to quit
+nmap <LEADER>q :q<CR>
+nmap <LEADER>Q :qa!<CR>
