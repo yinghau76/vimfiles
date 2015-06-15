@@ -50,7 +50,7 @@ vmap <D-k> <M-k>
 
 " Allow to insert semicolon without moving to the end of line. Good for
 " editing in C-like-syntax language.
-" noremap ; A;
+noremap ; A;
 
 " Region expanding
 map v <Plug>(expand_region_expand)
