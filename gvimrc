@@ -2,10 +2,13 @@ set guitablabel=%M%t
 set vb t_vb= " error bell off and no screen flash
 
 if has("gui_macvim")
-  let g:my_guifont="Office Code Pro:h17"
+  let g:my_guifont="Office Code Pro:h13"
 elseif has("gui_gtk")
   let g:my_guifont="Monospace 12" " for ubuntu
 end
+
+" 40x120 is a good initial window size
+set lines=40 columns=120
 
 let &guifont=g:my_guifont
 
