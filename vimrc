@@ -127,7 +127,11 @@ let g:user_zen_settings = {
 \  'indentation' : '  '
 \}
 
+" Make CR in {|} to open a new line
+let delimitMate_expand_cr = 1
+
 behave mswin
+
 
 " ## auto-generated
 
