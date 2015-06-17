@@ -13,7 +13,7 @@ set lines=40 columns=120
 let &guifont=g:my_guifont
 
 if has("gui_macvim")
-  let g:my_guifont_large="Monaco:h25"          " for Mac
+  let g:my_guifont_large="Office Code Pro:h25"          " for Mac
 elseif has("gui_gtk")
   let g:my_guifont_large="Monospace 22"        " for ubuntu
 end

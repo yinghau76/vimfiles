@@ -17,6 +17,7 @@ call vundle#rc()
 Bundle 'fatih/vim-go'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bling/vim-airline'
+" Automatic closing of quotes, parenthesis, brackets, etc.
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
@@ -48,16 +49,17 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
-Bundle 'vim-scripts/argtextobj.vim'
+" Rapid toggling between the two different styles of ruby blocks
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'ConradIrwin/vim-bracketed-paste'
+" Automatic `:set paste`
+Bundle 'ConradIrwin/vim-bracketed-ClipboardTeste'
+" Visually select increasingly larger regions of text
 Bundle 'terryma/vim-expand-region'
 Bundle 'tomasr/molokai'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
-Bundle 'jalcine/cmake.vim'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 syntax on " Enable syntax highlighting
@@ -726,14 +728,19 @@ let g:syntastic_quiet_warnings=1
 
 " ## ultisnips.vim ##
 
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
-
 " Better key bindings for UtilSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+
+" ## ycm.vim ##
+
+let g:ycm_autoclose_preview_window_after_completion=1
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+
+let g:SuperTabDefaultCompletionType = '<C-n>'
