@@ -1,5 +1,3 @@
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-autocmd BufWritePost *.go silent! !ctags -R &.
 autocmd Filetype go set makeprg=go\ build\ ./...
 autocmd FileType go set ai sw=2 sts=2 et ts=2
 
@@ -14,6 +12,14 @@ function! s:GoLint()
     copen
 endfunction
 command! GoLint :call s:GoLint()
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+" let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:go_fmt_command = "goimports"
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
