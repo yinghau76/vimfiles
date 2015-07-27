@@ -53,8 +53,6 @@ Bundle 'vim-scripts/mru.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
-" Automatic `:set paste`
-Bundle 'ConradIrwin/vim-bracketed-ClipboardTeste'
 " Visually select increasingly larger regions of text
 Bundle 'terryma/vim-expand-region'
 Bundle 'tomasr/molokai'
