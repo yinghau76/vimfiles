@@ -55,7 +55,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
 " Visually select increasingly larger regions of text
 Bundle 'terryma/vim-expand-region'
-Bundle 'tomasr/molokai'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 
