@@ -176,9 +176,6 @@ cmap w!! w !sudo tee % >/dev/null
 
 " ## completion.vim ##
 
-" Supertab
-let g:SuperTabDefaultCompletionType = "context"
-
 " clang_compelte: open qfix window automatically
 let g:clang_complete_copen = 1
 let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
@@ -746,8 +743,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:ycm_autoclose_preview_window_after_insertion=1
 
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+" let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 
-let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
