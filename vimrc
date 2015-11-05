@@ -1,6 +1,9 @@
 set nocompatible
 filetype off          " Disabled for Vundle
 
+" To point Nvim to Python interpreter
+let g:python_host_prog = '/usr/bin/python'
+
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
