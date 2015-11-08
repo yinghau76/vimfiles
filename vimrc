@@ -627,9 +627,6 @@ vmap <D-k> <M-k>
 " editing in C-like-syntax language.
 noremap ; A;
 
-" Region expanding
-map v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
 
 " ## leaders.vim ##
 
