@@ -27,3 +27,6 @@ au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\
 
 " Git commits
 autocmd FileType gitcommit setlocal spell
+
+" Markdown
+autocmd FileType markdown setlocal spell

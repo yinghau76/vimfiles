@@ -1,6 +1,9 @@
 set nocompatible
 filetype off          " Disabled for Vundle
 
+" To point Nvim to Python interpreter
+let g:python_host_prog = '/usr/bin/python'
+
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
@@ -127,14 +130,13 @@ let delimitMate_expand_cr = 1
 
 behave mswin
 
-
 " ## auto-generated
 
 " ## ack.vim ##
 
 " Ack
 
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " ## airline.vim ##
 
@@ -416,51 +418,47 @@ au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\
 " Git commits
 autocmd FileType gitcommit setlocal spell
 
+" Markdown
+autocmd FileType markdown setlocal spell
+
 " ## fn.vim ##
 
-" Function keys                                                 {{{2
+" Function keys
 
 " <F2> = save
-nmap            <F2>            :BufExplorer<CR>
-nmap            <F3>            :NERDTreeToggle<CR>
-nmap            <F4>            :TagbarToggle<CR>
+nmap <F2> :update<CR>
+vmap <F2> <Esc><F2>gv
+imap <F2> <C-o><F2>
 
-nmap            <F5>            :make<CR>:copen<CR>
+nmap <F3> :NERDTreeToggle<CR>
+nmap <F4> :TagbarToggle<CR>
+
+nmap <F5> :make<CR>
+imap <F5> <C-O><F5>
 
 " <F6> = switch files
-nmap            <F6>            <C-^>
-imap            <F6>            <C-O><F6>
+nmap <F6> <C-^>
+imap <F6> <C-O><F6>
 " <C-F6> = toggle .c/.h (see above) or code/test (see below)
-nmap            <C-F6>          <LEADER>h
-imap            <C-F6>          <C-O><C-F6>
+nmap <C-F6> <LEADER>h
+imap <C-F6> <C-O><C-F6>
 
 " <F7> = jump to tag/filename+linenumber in the clipboard
-nmap            <F7>            :ClipboardTest<CR>
+nmap <F7> :ClipboardTest<CR>
 
 " <F8> = highlight identifier under cursor
 " (some file-type dependent autocommands redefine it)
-nmap            <F8>            :let @/='\<'.expand('<cword>').'\>'<bar>set hls<CR>
-
-" <F9> = make
-nmap            <F9>    :make<CR>
-imap            <F9>    <C-O><F9>
+nmap <F8> :let @/='\<'.expand('<cword>').'\>'<bar>set hls<CR>
 
 " <F11> = toggle 'paste'
 set pastetoggle=<F11>
 
-" <F12> = show the Unicode name of the character under cursor
-nmap            <F12>           :UnicodeName<CR>
-" <S-F12> = show highlight group under cursor
-nmap            <S-F12>         :ShowHighlightGroup<CR>
-" <C-F12> = show syntax stack under cursor
-nmap            <C-F12>         :ShowSyntaxStack<CR>
-
-nmap            <F13>    :bd<CR>
-imap            <F13>    <C-O><F13>
-nmap            <F14>    :bp<CR>
-imap            <F14>    <C-O><F14>
-nmap            <F15>    :bn<CR>
-imap            <F15>    <C-O><F15>
+nmap <F13> :bd<CR>
+imap <F13> <C-O><F13>
+nmap <F14> :bp<CR>
+imap <F14> <C-O><F14>
+nmap <F15> :bn<CR>
+imap <F15> <C-O><F15>
 
 
 " ## golang.vim ##
@@ -627,55 +625,42 @@ vmap <D-k> <M-k>
 " editing in C-like-syntax language.
 noremap ; A;
 
-" Region expanding
-"map v <Plug>(expand_region_expand)
-"vmap <C-v> <Plug>(expand_region_shrink)
 
 " ## leaders.vim ##
 
-" Quickly edit/reload the vimrc file
-nmap <SLIENT> <LEADER>ev :tabe $HOME/.vim/vimrc<CR>
-nmap <SLIENT> <LEADER>sv :so $MYVIMRC<CR>
+nnoremap <LEADER>/ :Ack <C-r><C-w><CR>
+
+nnoremap <LEADER>be :BufExplorer<CR>
 
 " Alternative for 'set autochdir'
 nnoremap <LEADER>cd :cd %:p:h<CR>:pwd<CR>
-
-" Remove the Windows ^M - when the encodings gets messed up
-noremap <LEADER>rm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Toggle between .c (.cc, .cpp) and .h
 " ToggleHeader defined in $HOME/.vim/plugin/cpph.vim
 map <LEADER>h :call ToggleHeader()<CR>
 
-" Opens a new tab with the current buffer's path
-" Super useful when editing files in the same directory
-map <LEADER>te :tabedit <c-r>=expand("%:p:h")<cr>/
-
-nnoremap <LEADER>/ :Ack <C-r><C-w><CR>
-nnoremap <LEADER>be :BufExplorer<CR>
-
-map <LEADER>tb :TagbarToggle<CR>
-
-" Quickly open file
-nnoremap <LEADER>o :CtrlP<CR>
-
-" Save file
-nnoremap <LEADER>w :w<CR>
+nmap <LEADER>n :cnext<CR>
+nmap <LEADER>p :cprev<CR>
 
 " Close file
 nnoremap <LEADER>q :bd<CR>
 
-" Enter visual line mode easily
-nmap <LEADER><LEADER> V
+" Remove the Windows ^M - when the encodings gets messed up
+noremap <LEADER>rm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-" Shortcuts to quit
-nmap <LEADER>q :q<CR>
-nmap <LEADER>Q :qa!<CR>
+" Tagbar
+map <LEADER>tb :TagbarToggle<CR>
 
-" ## nerdtree.vim ##
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <LEADER>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
-" NERDTree
-map <LEADER>n :NERDTree<CR>
+" Quickly edit/reload the vimrc file
+nmap <LEADER>ve :tabe $HOME/.vim/vimrc<CR>
+nmap <LEADER>vs :so $HOME/.vim/vimrc<CR>
+
+" Save file
+nnoremap <LEADER>w :w<CR>
 
 " ## objc.vim ##
 
