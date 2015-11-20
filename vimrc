@@ -428,6 +428,7 @@ autocmd FileType gitcommit setlocal spell
 
 " Markdown
 autocmd FileType markdown setlocal spell
+autocmd FileType markdown set wrap
 
 " ## fn.vim ##
 
