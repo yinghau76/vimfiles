@@ -1,5 +1,6 @@
 autocmd Filetype go set makeprg=go\ build\ ./...
 autocmd FileType go set ai sw=2 sts=2 et ts=2
+autocmd FileType gohtmltmpl set ai sw=2 sts=2 et
 
 function! s:GoVet()
     cexpr system("go vet " . shellescape(expand('%')))
@@ -48,3 +49,5 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+au FileType go nmap <Leader>e <Plug>(go-rename)

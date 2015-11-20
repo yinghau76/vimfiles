@@ -53,5 +53,5 @@ vmap <D-k> <M-k>
 noremap ; A;
 
 " Region expanding
-map v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
+"map v <Plug>(expand_region_expand)
+"vmap <C-v> <Plug>(expand_region_shrink)

@@ -27,7 +27,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'slim-template/vim-slim'
@@ -53,8 +53,6 @@ Bundle 'vim-scripts/mru.vim'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
 Bundle 'Valloric/YouCompleteMe'
-" Visually select increasingly larger regions of text
-Bundle 'terryma/vim-expand-region'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 
@@ -415,6 +413,8 @@ au BufRead,BufNewFile *.ninja set filetype=ninja
 " Use ggVGgq to format the entire file
 au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\ 2>/dev/null
 
+" Git commits
+autocmd FileType gitcommit setlocal spell
 
 " ## fn.vim ##
 
@@ -467,6 +467,7 @@ imap            <F15>    <C-O><F15>
 
 autocmd Filetype go set makeprg=go\ build\ ./...
 autocmd FileType go set ai sw=2 sts=2 et ts=2
+autocmd FileType gohtmltmpl set ai sw=2 sts=2 et
 
 function! s:GoVet()
     cexpr system("go vet " . shellescape(expand('%')))
@@ -515,6 +516,8 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+au FileType go nmap <Leader>e <Plug>(go-rename)
 
 " ## highlight.vim ##
 
@@ -625,8 +628,8 @@ vmap <D-k> <M-k>
 noremap ; A;
 
 " Region expanding
-map v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
+"map v <Plug>(expand_region_expand)
+"vmap <C-v> <Plug>(expand_region_shrink)
 
 " ## leaders.vim ##
 
