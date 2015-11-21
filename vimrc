@@ -132,12 +132,6 @@ behave mswin
 
 " ## auto-generated
 
-" ## ack.vim ##
-
-" Ack
-
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
 " ## airline.vim ##
 
 " Airline settings
@@ -173,15 +167,6 @@ set wildmode=list:longest
 
 " This lets you use w!! to do that after you opened the file already
 cmap w!! w !sudo tee % >/dev/null
-
-" ## completion.vim ##
-
-" clang_compelte: open qfix window automatically
-let g:clang_complete_copen = 1
-let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
-if isdirectory(s:clang_library_path)
-    let g:clang_library_path=s:clang_library_path
-endif
 
 " ## cscope_maps.vim ##
 
@@ -375,11 +360,6 @@ let g:ctrlp_prompt_mappings = {
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" ## erb.vim ##
-
-" eRuby
-autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
-
 " ## fat-finger.vim ##
 
 if has("user_commands")
@@ -411,6 +391,7 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+
 " Remember info about open buffers on close
 set viminfo^=%
 
@@ -429,6 +410,25 @@ autocmd FileType gitcommit setlocal spell
 " Markdown
 autocmd FileType markdown setlocal spell
 autocmd FileType markdown set wrap
+
+" HTML
+autocmd FileType html set ai sw=2 sts=2 et
+
+" Ruby
+autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+
+" Java
+autocmd FileType java set ai sw=4 sts=4 et ts=4
+autocmd FileType java colorscheme slate
+autocmd FileType java set foldmethod=syntax
+
+" Objective-C
+autocmd FileType objc set ai sw=4 sts=4 et ts=4
 
 " ## fn.vim ##
 
@@ -583,20 +583,6 @@ command! ShowHighlightGroup call s:ShowHighlightGroup()
 command! ShowSyntaxStack call s:ShowSyntaxStack()
 
 
-" ## html.vim ##
-
-" HTML
-autocmd FileType html set ai sw=2 sts=2 et
-
-
-" ## java.vim ##
-
-" Java
-autocmd FileType java set ai sw=4 sts=4 et ts=4
-
-" autocmd FileType java colorscheme slate
-" autocmd FileType java set foldmethod=syntax
-
 " ## keymap.vim ##
 
 " Mac key mapping
@@ -690,17 +676,6 @@ nmap <LEADER>vs :so $HOME/.vim/vimrc<CR>
 " Save file
 nnoremap <LEADER>w :w<CR>
 
-" ## objc.vim ##
-
-" Objective-C
-autocmd FileType objc set ai sw=4 sts=4 et ts=4
-
-" ## octopress.vim ##
-
-" Octopress
-autocmd BufNewFile,BufRead */_posts/*.markdown set syntax=octopress
-
-
 " ## quickfix.vim ##
 
 
@@ -727,17 +702,6 @@ augroup QFixToggle
     autocmd BufWinLeave * if exists("g:qfix_win") && expand("<abuf>") == g:qfix_win | unlet! g:qfix_win | endif
 augroup END
 
-" ## ruby.vim ##
-
-" Ruby
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
-
-autocmd BufNewFile,BufRead *.thor set filetype=ruby
-
 " ## syntastic.vim ##
 
 " syntastic
@@ -757,9 +721,5 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " ## ycm.vim ##
 
 let g:ycm_autoclose_preview_window_after_insertion=1
-
-" make YCM compatible with UltiSnips (using supertab)
-" let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
-" let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
