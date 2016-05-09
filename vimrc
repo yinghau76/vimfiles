@@ -459,12 +459,11 @@ imap <F6> <C-O><F6>
 nmap <C-F6> <LEADER>h
 imap <C-F6> <C-O><C-F6>
 
-" <F7> = prev error, <F9> = next error
-nmap <F7> :cprev<CR>  " mac: prev track
+nmap <F7> :cprev<CR>
 imap <F7> <C-O><F7>
-nmap <F8> :copen<CR>
+nmap <F8> :cnext<CR>
 imap <F8> <C-O><F8>
-nmap <F9> :cnext<CR>  " mac: next track
+nmap <F9> :copen<CR>
 imap <F9> <C-O><F9>
 
 nmap <F10> :set nohls<CR>
