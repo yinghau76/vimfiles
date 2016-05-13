@@ -3,6 +3,7 @@ syntax on " Enable syntax highlighting
 colorscheme molokai
 behave mswin
 
+
 " ## auto-generated
 
 " ## 0-set-let.vim ##
@@ -405,7 +406,7 @@ au BufRead,BufNewFile *.ninja set filetype=ninja
 au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\ 2>/dev/null
 
 " Git commits
-autocmd FileType gitcommit setlocal spell
+autocmd FileType gitcommit setlocal spell tw=72
 
 " Markdown
 autocmd FileType markdown setlocal spell
