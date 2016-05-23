@@ -88,6 +88,7 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'dracula/vim'
 Bundle 'fatih/vim-go'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bling/vim-airline'
@@ -693,7 +694,7 @@ function! QFixToggle(forced)
         endif
     endif
 endfunction
- 
+
 augroup QFixToggle
     autocmd!
     autocmd BufWinEnter quickfix let g:qfix_win = bufnr("$")
