@@ -425,8 +425,12 @@ autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 
 " Java
 autocmd FileType java set ai sw=4 sts=4 et ts=4
-autocmd FileType java colorscheme slate
-autocmd FileType java set foldmethod=syntax
+
+" AIDL
+au BufRead,BufNewFile *.aidl set filetype=java
+
+" HAL
+au BufRead,BufNewFile *.hal set filetype=java
 
 " Objective-C
 autocmd FileType objc set ai sw=4 sts=4 et ts=4
