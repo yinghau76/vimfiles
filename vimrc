@@ -96,7 +96,7 @@ Bundle 'bling/vim-airline'
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
-Bundle 'grayrest/vim-syntastic'
+Bundle 'scrooloose/syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
@@ -698,7 +698,7 @@ function! QFixToggle(forced)
         endif
     endif
 endfunction
- 
+
 augroup QFixToggle
     autocmd!
     autocmd BufWinEnter quickfix let g:qfix_win = bufnr("$")
