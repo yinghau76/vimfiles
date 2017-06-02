@@ -96,7 +96,7 @@ Bundle 'bling/vim-airline'
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
-Bundle 'scrooloose/syntastic'
+Bundle 'grayrest/vim-syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
@@ -698,7 +698,7 @@ function! QFixToggle(forced)
         endif
     endif
 endfunction
-
+ 
 augroup QFixToggle
     autocmd!
     autocmd BufWinEnter quickfix let g:qfix_win = bufnr("$")
@@ -708,10 +708,8 @@ augroup END
 " ## syntastic.vim ##
 
 " syntastic
-let g:syntastic_enable_signs=1
-" let g:syntastic_auto_loc_list=1
-let g:syntastic_quiet_warnings=1
-
+let g:syntastic_enable_signs = 1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 " ## ultisnips.vim ##
 
