@@ -27,7 +27,7 @@ au BufRead,BufNewFile *.ninja set filetype=ninja
 au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\ 2>/dev/null
 
 " Git commits
-autocmd FileType gitcommit setlocal spell
+autocmd FileType gitcommit setlocal spell tw=72
 
 " Markdown
 autocmd FileType markdown setlocal spell
@@ -46,8 +46,12 @@ autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 
 " Java
 autocmd FileType java set ai sw=4 sts=4 et ts=4
-autocmd FileType java colorscheme slate
-autocmd FileType java set foldmethod=syntax
+
+" AIDL
+au BufRead,BufNewFile *.aidl set filetype=java
+
+" HAL
+au BufRead,BufNewFile *.hal set filetype=java
 
 " Objective-C
 autocmd FileType objc set ai sw=4 sts=4 et ts=4
