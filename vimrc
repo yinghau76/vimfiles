@@ -360,6 +360,10 @@ let g:ctrlp_prompt_mappings = {
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
+" ## encoding.vim ##
+
+let g:tagbar_iconchars = ['+', '-']
+
 " ## fat-finger.vim ##
 
 if has("user_commands")
@@ -721,5 +725,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " ## ycm.vim ##
 
 let g:ycm_autoclose_preview_window_after_insertion=1
-
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+
+nnoremap <LEADER>] :YcmCompleter GoTo<CR>
+nnoremap <LEADER>} :YcmCompleter GoToDefinition<CR>
