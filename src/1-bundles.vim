@@ -13,6 +13,7 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'dracula/vim'
 Bundle 'fatih/vim-go'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bling/vim-airline'
@@ -20,7 +21,7 @@ Bundle 'bling/vim-airline'
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
-Bundle 'grayrest/vim-syntastic'
+Bundle 'vim-syntastic/syntastic'
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
@@ -48,11 +49,9 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
-" Rapid toggling between the two different styles of ruby blocks
-Bundle 'jgdavey/vim-blockle'
 Bundle 'majutsushi/tagbar'
+Bundle 'honza/vim-snippets'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
