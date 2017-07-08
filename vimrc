@@ -95,31 +95,26 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bling/vim-airline'
 " Automatic closing of quotes, parenthesis, brackets, etc.
 Bundle 'Raimondi/delimitMate'
-Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
 Bundle 'vim-syntastic/syntastic'
-Bundle 'groenewege/vim-less'
-Bundle 'kchmck/vim-coffee-script'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'rking/ag.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
-Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vividchalk'
-Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
@@ -670,6 +665,7 @@ noremap <LEADER>rm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Tagbar
 map <LEADER>tb :TagbarToggle<CR>
+map <LEADER>tl :TagbarToggle<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
