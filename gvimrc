@@ -2,7 +2,8 @@ set guitablabel=%M%t
 set vb t_vb= " error bell off and no screen flash
 
 if has("gui_macvim")
-  let g:my_guifont="Consolas:h15"
+  let g:my_guifont="Hasklig:h15"
+  set macligatures
 elseif has("gui_gtk")
   let g:my_guifont="Monospace 12" " for ubuntu
 end
