@@ -36,6 +36,9 @@ autocmd FileType markdown set wrap
 " HTML
 autocmd FileType html set ai sw=2 sts=2 et
 
+" JavaScript
+autocmd FileType javascript set ai sw=2 sts=2 et
+
 " Ruby
 autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
