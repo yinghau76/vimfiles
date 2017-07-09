@@ -413,6 +413,9 @@ autocmd FileType markdown set wrap
 " HTML
 autocmd FileType html set ai sw=2 sts=2 et
 
+" JavaScript
+autocmd FileType javascript set ai sw=2 sts=2 et
+
 " Ruby
 autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
@@ -665,7 +668,6 @@ noremap <LEADER>rm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Tagbar
 map <LEADER>tb :TagbarToggle<CR>
-map <LEADER>tl :TagbarToggle<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
