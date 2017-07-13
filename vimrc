@@ -400,11 +400,9 @@ au BufNewFile,BufRead *.gradle setf groovy
 " Ninja
 au BufRead,BufNewFile *.ninja set filetype=ninja
 
-" Use ggVGgq to format the entire file
-au FileType c,cpp,java set formatprg=uncrustify\ -c\ ~/.uncrustify\ --no-backup\ 2>/dev/null
-
 " Git commits
 autocmd FileType gitcommit setlocal spell tw=72
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
 " Markdown
 autocmd FileType markdown setlocal spell
