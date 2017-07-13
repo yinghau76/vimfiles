@@ -14,6 +14,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'dracula/vim'
+Bundle 'chriskempson/base16-vim'
 Bundle 'fatih/vim-go'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'bling/vim-airline'
@@ -50,3 +51,5 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
+
+colorscheme base16-default-dark
