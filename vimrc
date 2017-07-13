@@ -3,7 +3,6 @@ syntax on " Enable syntax highlighting
 colorscheme molokai
 behave mswin
 
-
 " ## auto-generated
 
 " ## 0-set-let.vim ##
@@ -111,11 +110,9 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-vividchalk'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
@@ -128,7 +125,7 @@ Bundle 'SirVer/ultisnips'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
-colorscheme base16-default-dark
+colorscheme dracula
 
 " ## airline.vim ##
 
