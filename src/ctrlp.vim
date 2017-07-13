@@ -14,3 +14,6 @@ let g:ctrlp_prompt_mappings = {
     \ 'PrtCurRight()':        ['<c-l>'],
     \ }
 
+let g:ctrlp_custom_ignore = {
+\ 'dir':  '\v[\/](vendor|node_modules)$',
+\ }
