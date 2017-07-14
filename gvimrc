@@ -15,6 +15,7 @@ let &guifont=g:my_guifont
 
 if has("gui_macvim")
   let g:my_guifont_large="Consolas:h25"        " for Mac
+  colorscheme base16-tomorrow-night
 elseif has("gui_gtk")
   let g:my_guifont_large="Monospace 22"        " for Ubuntu
 end
