@@ -100,10 +100,10 @@ Bundle 'vim-syntastic/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
 Bundle 'leshill/vim-json'
+Bundle 'kien/ctrlp.vim'
 Bundle 'junegunn/fzf.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'michaeljsmith/vim-indent-object'
-"Bundle 'rking/ag.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-commentary'
@@ -510,9 +510,6 @@ imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
-
-"" Old habits die hard
-nmap <C-p> :Files<CR>
 
 " ## golang.vim ##
 
