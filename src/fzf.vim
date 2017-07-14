@@ -1,4 +1,4 @@
-set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
