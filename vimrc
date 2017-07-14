@@ -511,6 +511,16 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
+nmap <LEADER>F :Files<CR>
+nmap <LEADER>C :Commands<CR>
+nmap <LEADER>B :Buffers<CR>
+nmap <LEADER>L :Lines<CR>
+nmap <LEADER>T :Tags<CR>
+nmap <LEADER>H :Helptags<CR>
+nmap <LEADER>T :Filetypes<CR>
+nmap <LEADER>G :Commits<CR>
+nmap <LEADER>S :Snippets<CR>
+
 " ## golang.vim ##
 
 autocmd Filetype go set makeprg=go\ build\ ./...
@@ -663,7 +673,7 @@ noremap ; A;
 
 " ## leaders.vim ##
 
-nnoremap <LEADER>/ :Ack <C-r><C-w><CR>
+nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
 
 nnoremap <LEADER>be :BufExplorer<CR>
 

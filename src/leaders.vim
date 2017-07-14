@@ -1,4 +1,4 @@
-nnoremap <LEADER>/ :Ack <C-r><C-w><CR>
+nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
 
 nnoremap <LEADER>be :BufExplorer<CR>
 
