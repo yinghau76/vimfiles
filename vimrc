@@ -99,10 +99,11 @@ Bundle 'gmarik/vundle'
 Bundle 'vim-syntastic/syntastic'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
-Bundle 'kien/ctrlp.vim'
+Bundle 'leshill/vim-json'
+Bundle 'junegunn/fzf.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'rking/ag.vim'
+"Bundle 'rking/ag.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-commentary'
@@ -494,6 +495,24 @@ imap <F15> <C-O><F15>
 nmap <F14> :bd<CR>
 imap <F14> <C-O><F13>
 
+
+" ## fzf.vim ##
+
+set rtp+=/usr/local/opt/fzf
+
+" Mapping selecting mappings
+nmap <leader><tab> <plug>(fzf-maps-n)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
+
+" Insert mode completion
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
+"" Old habits die hard
+nmap <C-p> :Files<CR>
 
 " ## golang.vim ##
 
