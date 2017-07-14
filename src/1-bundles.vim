@@ -13,41 +13,55 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Color schemes
 Bundle 'dracula/vim'
 Bundle 'chriskempson/base16-vim'
-Bundle 'fatih/vim-go'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'bling/vim-airline'
-" Automatic closing of quotes, parenthesis, brackets, etc.
-Bundle 'Raimondi/delimitMate'
+
+" Snippets
+Bundle 'honza/vim-snippets'
+Bundle 'epilande/vim-es2015-snippets'
+Bundle 'epilande/vim-react-snippets'
+Bundle 'SirVer/ultisnips'
+
+" Useful
 Bundle 'gmarik/vundle'
-Bundle 'vim-syntastic/syntastic'
-Bundle 'pangloss/vim-javascript'
-Bundle 'mxw/vim-jsx'
-Bundle 'leshill/vim-json'
+Bundle 'bling/vim-airline'
+Bundle 'majutsushi/tagbar'
+Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'junegunn/fzf.vim'
-Bundle 'mattn/emmet-vim'
+Bundle 'vim-scripts/bufexplorer.zip'
+
+" Editing
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Raimondi/delimitMate'
+Bundle 'vim-syntastic/syntastic'
 Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'rstacruz/sparkup'
-Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/ZoomWin'
-Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'honza/vim-snippets'
+
+" Web development
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
+Bundle 'leshill/vim-json'
+Bundle 'mattn/emmet-vim'
+Bundle 'tpope/vim-ragtag'
+Bundle 'rstacruz/sparkup'
+
+" Go development
+Bundle 'fatih/vim-go'
+
+" C/C++ development
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'SirVer/ultisnips'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
