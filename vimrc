@@ -137,6 +137,7 @@ Bundle 'fatih/vim-go'
 
 " C/C++ development
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'rdnetto/YCM-Generator'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
