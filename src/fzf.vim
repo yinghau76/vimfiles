@@ -17,6 +17,6 @@ nmap <LEADER>B :Buffers<CR>
 nmap <LEADER>L :Lines<CR>
 nmap <LEADER>T :Tags<CR>
 nmap <LEADER>H :Helptags<CR>
-nmap <LEADER>T :Filetypes<CR>
+nmap <LEADER>Y :Filetypes<CR>
 nmap <LEADER>G :Commits<CR>
 nmap <LEADER>S :Snippets<CR>
