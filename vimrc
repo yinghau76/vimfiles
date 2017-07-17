@@ -137,6 +137,7 @@ Bundle 'fatih/vim-go'
 
 " C/C++ development
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'rdnetto/YCM-Generator'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
@@ -780,8 +781,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " ## ycm.vim ##
 
-let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+let g:ycm_confirm_extra_conf = 0
 
 nnoremap <LEADER>] :YcmCompleter GoTo<CR>
 nnoremap <LEADER>} :YcmCompleter GoToDefinition<CR>
