@@ -89,7 +89,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Color schemes
-Bundle 'dracula/vim'
+Bundle 'crusoexia/vim-dracula'
 Bundle 'chriskempson/base16-vim'
 
 " Snippets
