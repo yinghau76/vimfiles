@@ -70,7 +70,7 @@ def GetRoot(filename, marker_dir):
     while True:
         if os.path.ismount(path):
             return None
-        if os.path.isdir(os.path.join(path, marker_dir)):
+        if os.path.isfile(os.path.join(path, marker_dir)):
             return path
         path = os.path.dirname(path)
 
