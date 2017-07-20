@@ -20,3 +20,6 @@ nmap <LEADER>H :Helptags<CR>
 nmap <LEADER>Y :Filetypes<CR>
 nmap <LEADER>G :Commits<CR>
 nmap <LEADER>S :Snippets<CR>
+
+nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
+nnoremap <LEADER>? :Tags <C-r><C-w><CR>

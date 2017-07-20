@@ -1,5 +1,3 @@
-nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
-
 nnoremap <LEADER>be :BufExplorer<CR>
 
 " Alternative for 'set autochdir'
