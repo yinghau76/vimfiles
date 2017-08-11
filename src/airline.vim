@@ -15,11 +15,8 @@ endfunction
 
 let os = GetRunningOS()
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-if os == "mac"
-    let g:airline_powerline_fonts = 1
+if os == "linux"
+    let g:airline_symbols_ascii = 1
 endif
 let g:airline_detect_paste=1
 let g:airline#extensions#tabline#enabled = 1
