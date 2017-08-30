@@ -124,6 +124,9 @@ Bundle 'vim-scripts/camelcasemotion'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/mru.vim'
 
+"Linux kernel
+Bundle 'vivien/vim-linux-coding-style'
+
 " Web development
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
@@ -138,6 +141,7 @@ Bundle 'fatih/vim-go'
 " C/C++ development
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'rdnetto/YCM-Generator'
+Bundle 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
