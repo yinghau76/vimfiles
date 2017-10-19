@@ -23,3 +23,5 @@ nmap <LEADER>S :Snippets<CR>
 
 nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
 nnoremap <LEADER>? :Tags <C-r><C-w><CR>
+
+nmap ; :Buffers<CR>

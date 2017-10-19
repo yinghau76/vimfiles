@@ -48,7 +48,3 @@ nmap <D-k> <M-k>
 vmap <D-j> <M-j>
 vmap <D-k> <M-k>
 
-" Allow to insert semicolon without moving to the end of line. Good for
-" editing in C-like-syntax language.
-noremap ; A;
-
