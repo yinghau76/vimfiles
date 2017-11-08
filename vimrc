@@ -139,8 +139,7 @@ Bundle 'rstacruz/sparkup'
 Bundle 'fatih/vim-go'
 
 " C/C++ development
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'rdnetto/YCM-Generator'
+Bundle 'ajh17/VimCompletesMe'
 Bundle 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
@@ -540,6 +539,8 @@ nmap <LEADER>S :Snippets<CR>
 nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
 nnoremap <LEADER>? :Tags <C-r><C-w><CR>
 
+nmap ; :Buffers<CR>
+
 " ## golang.vim ##
 
 autocmd Filetype go set makeprg=go\ build\ ./...
@@ -684,10 +685,6 @@ nmap <D-j> <M-j>
 nmap <D-k> <M-k>
 vmap <D-j> <M-j>
 vmap <D-k> <M-k>
-
-" Allow to insert semicolon without moving to the end of line. Good for
-" editing in C-like-syntax language.
-noremap ; A;
 
 
 " ## leaders.vim ##
