@@ -64,8 +64,7 @@ Bundle 'rstacruz/sparkup'
 Bundle 'fatih/vim-go'
 
 " C/C++ development
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'rdnetto/YCM-Generator'
+Bundle 'ajh17/VimCompletesMe'
 Bundle 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
