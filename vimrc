@@ -3,6 +3,8 @@ syntax on " Enable syntax highlighting
 colorscheme molokai
 behave mswin
 
+let g:python_host_prog = '/home/mtk09012/.linuxbrew/bin/python2'
+
 " ## auto-generated
 
 " ## 0-set-let.vim ##
@@ -40,6 +42,7 @@ set smartcase     " ignore case if search pattern is all lowercase, case-sensiti
 
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
+set cursorline    " highlight current line
 
 set nobackup
 set noswapfile
