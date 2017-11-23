@@ -1,4 +1,7 @@
-sed '/## auto-generated/q' ../vimrc > vimrc-new
-awk 'FNR==1 {print "\n\" ## " FILENAME " ##\n"}{print}' *.vim >> vimrc-new
-cat vimrc-new > ../vimrc
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+VIMRC=$DIR/../vimrc
+
+sed '/## auto-generated/q' $VIMRC > vimrc-new
+awk 'FNR==1 {var=FILENAME; n=split(var,a,/\//); print "\n\" ## " a[n] " ##\n"}{print}' $DIR/*.vim >> vimrc-new
+cat vimrc-new > $VIMRC
 rm vimrc-new
