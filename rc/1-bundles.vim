@@ -14,58 +14,58 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Color schemes
-Bundle 'crusoexia/vim-dracula'
-Bundle 'chriskempson/base16-vim'
+Plugin 'crusoexia/vim-dracula'
+Plugin 'chriskempson/base16-vim'
 
 " Snippets
-Bundle 'honza/vim-snippets'
-Bundle 'epilande/vim-es2015-snippets'
-Bundle 'epilande/vim-react-snippets'
-Bundle 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'epilande/vim-es2015-snippets'
+Plugin 'epilande/vim-react-snippets'
+Plugin 'SirVer/ultisnips'
 
 " Useful
-Bundle 'gmarik/vundle'
-Bundle 'bling/vim-airline'
-Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-Bundle 'junegunn/fzf.vim'
-Bundle 'vim-scripts/bufexplorer.zip'
+Plugin 'gmarik/vundle'
+Plugin 'bling/vim-airline'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/fzf.vim'
+Plugin 'vim-scripts/bufexplorer.zip'
 
 " Editing
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Raimondi/delimitMate'
-Bundle 'vim-syntastic/syntastic'
-Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'vim-scripts/camelcasemotion'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'vim-scripts/mru.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Raimondi/delimitMate'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'vim-scripts/camelcasemotion'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/mru.vim'
 
 "Linux kernel
-Bundle 'vivien/vim-linux-coding-style'
+Plugin 'vivien/vim-linux-coding-style'
 
 " Web development
-Bundle 'pangloss/vim-javascript'
-Bundle 'mxw/vim-jsx'
-Bundle 'leshill/vim-json'
-Bundle 'mattn/emmet-vim'
-Bundle 'tpope/vim-ragtag'
-Bundle 'rstacruz/sparkup'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'leshill/vim-json'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-ragtag'
+Plugin 'rstacruz/sparkup'
 
 " Go development
-Bundle 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 
 " C/C++ development
-Bundle 'ajh17/VimCompletesMe'
-Bundle 'octol/vim-cpp-enhanced-highlight'
+Plugin 'ajh17/VimCompletesMe'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
