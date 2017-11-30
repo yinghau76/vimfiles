@@ -459,6 +459,10 @@ au BufRead,BufNewFile *.hal set filetype=java
 " Objective-C
 autocmd FileType objc set ai sw=4 sts=4 et ts=4
 
+" Linux coding style. Disable it by default. Can be applied explicitly by
+" :LinuxCodingStyle command
+let g:linuxsty_patterns = []
+
 " ## fn.vim ##
 
 " Function keys
