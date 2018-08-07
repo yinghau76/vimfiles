@@ -157,26 +157,16 @@ colorscheme dracula
 
 " Airline settings
 
-function! GetRunningOS()
-  if has("win32")
-    return "win"
-  endif
-  if has("unix")
-    if system('uname')=~'Darwin'
-      return "mac"
-    else
-      return "linux"
-    endif
-  endif
-endfunction
-
-let os = GetRunningOS()
-
-if os == "linux"
-    let g:airline_symbols_ascii = 1
+let g:airline_powerline_fonts=1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
 endif
+let g:airline_symbols.notexists = '~'
 let g:airline_detect_paste=1
 let g:airline#extensions#tabline#enabled = 1
+
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
 
 " ## commandline.vim ##
 
