@@ -105,7 +105,6 @@ Plugin 'gmarik/vundle'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'vim-scripts/bufexplorer.zip'
 
