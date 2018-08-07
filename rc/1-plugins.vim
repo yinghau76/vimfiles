@@ -69,6 +69,12 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " Rust development
 Plugin 'rust-lang/rust.vim'
 
+" Dart development
+Plugin 'dart-lang/dart-vim-plugin'
+
+" Kotlin development
+Plugin 'udalov/kotlin-vim'
+
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
 colorscheme dracula
