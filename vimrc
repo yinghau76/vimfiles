@@ -1,6 +1,5 @@
 set nocompatible
 syntax on " Enable syntax highlighting
-colorscheme molokai
 behave mswin
 
 let g:python_host_prog = '/home/mtk09012/.linuxbrew/bin/python2'
@@ -147,6 +146,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Rust development
 Plugin 'rust-lang/rust.vim'
+
+Plugin 'udalov/kotlin-vim'
 
 filetype plugin indent on " Enable filetype-specific plugin and indenting
 
