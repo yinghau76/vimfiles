@@ -61,4 +61,6 @@ let g:user_zen_settings = {
 let delimitMate_expand_cr = 1
 
 " To point Nvim to Python interpreter
-let g:python_host_prog = '/usr/bin/python'
+if has('nvim')
+    let g:python_host_prog = expand('~/bin/python3')
+endif
