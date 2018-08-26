@@ -29,7 +29,6 @@ Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf.vim'
-Plugin 'vim-scripts/bufexplorer.zip'
 
 " Editing
 Plugin 'Lokaltog/vim-easymotion'
@@ -63,8 +62,12 @@ Plugin 'rstacruz/sparkup'
 Plugin 'fatih/vim-go'
 
 " C/C++ development
-Plugin 'ajh17/VimCompletesMe'
+" Plugin 'ajh17/VimCompletesMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+
+"" Meson build system
+Plugin 'igankevich/mesonic'
 
 " Rust development
 Plugin 'rust-lang/rust.vim'
