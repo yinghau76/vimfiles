@@ -106,7 +106,6 @@ Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/fzf.vim'
-Plugin 'vim-scripts/bufexplorer.zip'
 
 " Editing
 Plugin 'Lokaltog/vim-easymotion'
@@ -140,8 +139,12 @@ Plugin 'rstacruz/sparkup'
 Plugin 'fatih/vim-go'
 
 " C/C++ development
-Plugin 'ajh17/VimCompletesMe'
+" Plugin 'ajh17/VimCompletesMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+
+"" Meson build system
+Plugin 'igankevich/mesonic'
 
 " Rust development
 Plugin 'rust-lang/rust.vim'
@@ -160,16 +163,17 @@ colorscheme dracula
 
 " Airline settings
 
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_symbols.notexists = '~'
-let g:airline_detect_paste=1
+let g:airline_detect_paste = 1
 let g:airline#extensions#tabline#enabled = 1
 
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
+
 
 " ## commandline.vim ##
 
@@ -539,6 +543,7 @@ nmap <LEADER>H :Helptags<CR>
 nmap <LEADER>Y :Filetypes<CR>
 nmap <LEADER>G :Commits<CR>
 nmap <LEADER>S :Snippets<CR>
+nmap <LEADER>M :Maps<CR>
 
 nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
 nnoremap <LEADER>? :Tags <C-r><C-w><CR>
@@ -573,6 +578,23 @@ command! -bang -nargs=* Rg
 " Likewise, Files command with preview window
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
 
 " ## golang.vim ##
 
@@ -827,6 +849,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 let g:ycm_confirm_extra_conf = 0
 
+nnoremap <LEADER>g :YcmCompleter GoTo<CR>
 nnoremap <LEADER>] :YcmCompleter GoTo<CR>
 nnoremap <LEADER>} :YcmCompleter GoToDefinition<CR>
 
