@@ -25,8 +25,6 @@ nmap <LEADER>M :Maps<CR>
 nnoremap <LEADER>/ :Rg <C-r><C-w><CR>
 nnoremap <LEADER>? :Tags <C-r><C-w><CR>
 
-nmap ; :Buffers<CR>
-
 " https://github.com/junegunn/fzf.vim#advanced-customization
 "
 " Augmenting Ag command using fzf#vim#with_preview function
