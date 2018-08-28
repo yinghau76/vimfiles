@@ -22,7 +22,7 @@ nmap <LEADER>G :Commits<CR>
 nmap <LEADER>S :Snippets<CR>
 nmap <LEADER>M :Maps<CR>
 
-nnoremap <LEADER>/ :Ag <C-r><C-w><CR>
+nnoremap <LEADER>/ :Rg <C-r><C-w><CR>
 nnoremap <LEADER>? :Tags <C-r><C-w><CR>
 
 nmap ; :Buffers<CR>
