@@ -17,6 +17,9 @@ call vundle#rc()
 Plugin 'crusoexia/vim-dracula'
 Plugin 'chriskempson/base16-vim'
 
+" Documentation
+Plugin 'rhysd/devdocs.vim'
+
 " Snippets
 Plugin 'honza/vim-snippets'
 Plugin 'epilande/vim-es2015-snippets'
