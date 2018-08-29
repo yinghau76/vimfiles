@@ -381,6 +381,16 @@ let g:ctrlp_custom_ignore = {
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
+" ## devdocs.vim ##
+
+nmap K <Plug>(devdocs-under-cursor)
+
+if (system('uname') =~ 'darwin')
+    let g:devdocs_open_cmd = 'open -a Safari'
+else
+    let g:devdocs_open_cmd = 'firefox'
+endif
+
 " ## encoding.vim ##
 
 let g:tagbar_iconchars = ['+', '-']
