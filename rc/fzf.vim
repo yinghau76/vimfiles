@@ -11,13 +11,18 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
+nmap <LEADER>f :Files<CR>
 nmap <LEADER>F :Files<CR>
 nmap <LEADER>C :Commands<CR>
+nmap <LEADER>bu :Buffers<CR>
 nmap <LEADER>B :Buffers<CR>
+nmap <LEADER>l :BLines<CR>
 nmap <LEADER>L :Lines<CR>
+nmap <LEADER>t :BTags<CR>
 nmap <LEADER>T :Tags<CR>
 nmap <LEADER>H :Helptags<CR>
 nmap <LEADER>Y :Filetypes<CR>
+nmap <LEADER>g :BCommits<CR>
 nmap <LEADER>G :Commits<CR>
 nmap <LEADER>S :Snippets<CR>
 nmap <LEADER>M :Maps<CR>

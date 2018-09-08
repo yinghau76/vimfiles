@@ -1,14 +1,9 @@
-nnoremap <LEADER>be :BufExplorer<CR>
-
 " Alternative for 'set autochdir'
 nnoremap <LEADER>cd :cd %:p:h<CR>:pwd<CR>
 
 " Toggle between .c (.cc, .cpp) and .h
 " ToggleHeader defined in $HOME/.vim/plugin/cpph.vim
 map <LEADER>h :call ToggleHeader()<CR>
-
-nmap <LEADER>n :cnext<CR>
-nmap <LEADER>p :cprev<CR>
 
 " Close file
 nnoremap <LEADER>q :bd<CR>
@@ -24,8 +19,8 @@ map <LEADER>tb :TagbarToggle<CR>
 map <LEADER>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Quickly edit/reload the vimrc file
-nmap <LEADER>ve :tabe $HOME/.vim/vimrc<CR>
-nmap <LEADER>vs :so $HOME/.vim/vimrc<CR>
+nmap <LEADER>ve :tabe $MYVIMRC<CR>
+nmap <LEADER>vs :so $MYVIMRC<CR>
 
 " Save file
 nnoremap <LEADER>w :w<CR>
