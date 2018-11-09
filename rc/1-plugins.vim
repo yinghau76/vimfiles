@@ -81,6 +81,4 @@ Plugin 'dart-lang/dart-vim-plugin'
 " Kotlin development
 Plugin 'udalov/kotlin-vim'
 
-filetype plugin indent on " Enable filetype-specific plugin and indenting
-
 colorscheme dracula
