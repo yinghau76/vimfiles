@@ -158,8 +158,6 @@ Plugin 'dart-lang/dart-vim-plugin'
 " Kotlin development
 Plugin 'udalov/kotlin-vim'
 
-filetype plugin indent on " Enable filetype-specific plugin and indenting
-
 colorscheme dracula
 
 " ## airline.vim ##
@@ -173,9 +171,6 @@ endif
 let g:airline_symbols.notexists = '~'
 let g:airline_detect_paste = 1
 let g:airline#extensions#tabline#enabled = 1
-
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
 
 
 " ## commandline.vim ##
@@ -532,6 +527,12 @@ nmap <F14> :bd<CR>
 imap <F14> <C-O><F13>
 
 
+" ## fuchsia.vim ##
+
+if $FUCHSIA_DIR != ""
+    source $FUCHSIA_DIR/scripts/vim/fuchsia.vim
+endif
+
 " ## fzf.vim ##
 
 set rtp+=~/.fzf
@@ -550,7 +551,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 nmap <LEADER>f :Files<CR>
 nmap <LEADER>F :Files<CR>
 nmap <LEADER>C :Commands<CR>
-nmap <LEADER>bu :Buffers<CR>
+nmap <LEADER>b :Buffers<CR>
 nmap <LEADER>B :Buffers<CR>
 nmap <LEADER>l :BLines<CR>
 nmap <LEADER>L :Lines<CR>
@@ -757,6 +758,22 @@ nmap <D-k> <M-k>
 vmap <D-j> <M-j>
 vmap <D-k> <M-k>
 
+" CamelCaseMotion
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+map <silent> ge <Plug>CamelCaseMotion_ge
+sunmap w
+sunmap b
+sunmap e
+sunmap ge
+omap <silent> iw <Plug>CamelCaseMotion_iw
+xmap <silent> iw <Plug>CamelCaseMotion_iw
+omap <silent> ib <Plug>CamelCaseMotion_ib
+xmap <silent> ib <Plug>CamelCaseMotion_ib
+omap <silent> ie <Plug>CamelCaseMotion_ie
+xmap <silent> ie <Plug>CamelCaseMotion_ie
+
 
 " ## leaders.vim ##
 
@@ -857,7 +874,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " ## ycm.vim ##
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 let g:ycm_confirm_extra_conf = 0
 
 nnoremap <LEADER>g :YcmCompleter GoToImprecise<CR>
@@ -867,3 +883,16 @@ nnoremap <LEADER>} :YcmCompleter GoToDeclaration<CR>
 " make YCM compatible with UltiSnips (using supertab)
 "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 "let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+
+" Default <C-SPACE> conflicts with system key
+let g:ycm_key_invoke_completion = '<c-p>'
+
+" Trigger semantic completion after two characters typed
+let g:ycm_semantic_triggers =  {
+    \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+    \ 'cs,lua,javascript': ['re!\w{2}'],
+    \ }
+
+" ## zzz.vim ##
+
+filetype plugin indent on " Enable filetype-specific plugin and indenting
