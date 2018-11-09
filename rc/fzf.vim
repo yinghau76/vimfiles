@@ -14,7 +14,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 nmap <LEADER>f :Files<CR>
 nmap <LEADER>F :Files<CR>
 nmap <LEADER>C :Commands<CR>
-nmap <LEADER>bu :Buffers<CR>
+nmap <LEADER>b :Buffers<CR>
 nmap <LEADER>B :Buffers<CR>
 nmap <LEADER>l :BLines<CR>
 nmap <LEADER>L :Lines<CR>
