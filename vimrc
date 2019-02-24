@@ -530,7 +530,7 @@ imap <F14> <C-O><F13>
 " ## fuchsia.vim ##
 
 if $FUCHSIA_DIR != ""
-    source $FUCHSIA_DIR/scripts/vim/fuchsia.vim
+  source $FUCHSIA_DIR/scripts/vim/fuchsia.vim
 endif
 
 " ## fzf.vim ##
@@ -846,9 +846,6 @@ function! AdjustWindowHeight(minheight, maxheight)
     exe max([min([n_lines, a:maxheight]), a:minheight]) . "wincmd _"
 endfunction
 
-" Navigate through the errors using ctrl-j and ctrl-k, which mimics the standard down and up motion commands j and k.
-map <C-j> :cn<CR>
-map <C-k> :cp<CR>
 
 " ## syntastic.vim ##
 
