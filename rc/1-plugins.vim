@@ -64,8 +64,8 @@ Plugin 'rstacruz/sparkup'
 Plugin 'fatih/vim-go'
 
 " C/C++ development
-" Plugin 'ajh17/VimCompletesMe'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'arakashic/chromatica.nvim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 "" Meson build system

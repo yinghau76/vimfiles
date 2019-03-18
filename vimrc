@@ -68,6 +68,9 @@ let g:user_zen_settings = {
 " Make CR in {|} to open a new line
 let delimitMate_expand_cr = 1
 
+" Chromatica: Specify libclag path
+let g:chromatica#libclang_path='/usr/local/opt/llvm/lib'
+"let g:chromatica#enable_at_startup=1
 
 " ## 1-plugins.vim ##
 
@@ -137,8 +140,8 @@ Plugin 'rstacruz/sparkup'
 Plugin 'fatih/vim-go'
 
 " C/C++ development
-" Plugin 'ajh17/VimCompletesMe'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'arakashic/chromatica.nvim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 "" Meson build system

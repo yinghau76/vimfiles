@@ -60,3 +60,6 @@ let g:user_zen_settings = {
 " Make CR in {|} to open a new line
 let delimitMate_expand_cr = 1
 
+" Chromatica: Specify libclag path
+let g:chromatica#libclang_path='/usr/local/opt/llvm/lib'
+"let g:chromatica#enable_at_startup=1
