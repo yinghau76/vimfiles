@@ -64,3 +64,5 @@ xmap <silent> ib <Plug>CamelCaseMotion_ib
 omap <silent> ie <Plug>CamelCaseMotion_ie
 xmap <silent> ie <Plug>CamelCaseMotion_ie
 
+" Easy escaping from https://sanctum.geek.nz/arabesque/vim-anti-patterns/
+inoremap jj <Esc>
