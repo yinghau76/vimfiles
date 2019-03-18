@@ -68,10 +68,6 @@ let g:user_zen_settings = {
 " Make CR in {|} to open a new line
 let delimitMate_expand_cr = 1
 
-" To point Nvim to Python interpreter
-if has('nvim')
-    let g:python_host_prog = expand('~/bin/python3')
-endif
 
 " ## 1-plugins.vim ##
 
@@ -122,7 +118,6 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'vim-scripts/ZoomWin'
 Plugin 'vim-scripts/camelcasemotion'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/mru.vim'
@@ -774,6 +769,8 @@ xmap <silent> ib <Plug>CamelCaseMotion_ib
 omap <silent> ie <Plug>CamelCaseMotion_ie
 xmap <silent> ie <Plug>CamelCaseMotion_ie
 
+" Easy escaping from https://sanctum.geek.nz/arabesque/vim-anti-patterns/
+inoremap jj <Esc>
 
 " ## leaders.vim ##
 
