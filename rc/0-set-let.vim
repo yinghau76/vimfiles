@@ -60,7 +60,3 @@ let g:user_zen_settings = {
 " Make CR in {|} to open a new line
 let delimitMate_expand_cr = 1
 
-" To point Nvim to Python interpreter
-if has('nvim')
-    let g:python_host_prog = expand('~/bin/python3')
-endif
