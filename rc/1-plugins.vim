@@ -48,6 +48,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-scripts/camelcasemotion'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/mru.vim'
+Plugin 'wincent/terminus'
 
 "Linux kernel
 Plugin 'vivien/vim-linux-coding-style'
