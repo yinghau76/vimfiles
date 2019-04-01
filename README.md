@@ -2,4 +2,5 @@ This is my vim configuration hosted on GitHub. It is used to maintain consistent
 
 #### How it is organized
 
-It was originally organized with [Patheogen](https://github.com/tpope/vim-pathogen) and migrated to [Vundle](https://github.com/gmarik/Vundle.vim).
+- All plug-ins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
+- `vimrc` is composed of combining all `.vim` files in `rc/`.
