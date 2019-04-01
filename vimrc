@@ -117,6 +117,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/camelcasemotion'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-scripts/mru.vim'
+Plug 'wincent/terminus'
 
 "Linux kernel
 Plug 'vivien/vim-linux-coding-style'
