@@ -64,8 +64,3 @@ let delimitMate_expand_cr = 1
 let g:chromatica#libclang_path='/usr/local/opt/llvm/lib'
 "let g:chromatica#enable_at_startup=1
 
-" YCM: disable diagnostic highlighting by default
-let g:ycm_show_diagnostics_ui = 1
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_enable_diagnostic_highlighting = 0
-
