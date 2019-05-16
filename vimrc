@@ -169,6 +169,8 @@ let g:airline#extensions#tabline#enabled = 1
 
 " ## coc.vim ##
 
+" Origin: https://github.com/neoclide/coc.nvim
+
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
@@ -642,6 +644,10 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" Search for files (using fd) with the same filename without extension. Useful
+" for switching between .c/cpp and .h files
+command! SameFilename call fzf#run({'source': 'fd', 'options': '-q' . expand('%:t:r')})
+nmap <LEADER>h :SameFilename<CR>
 
 " ## golang.vim ##
 
@@ -811,10 +817,6 @@ inoremap jj <Esc>
 
 " Alternative for 'set autochdir'
 nnoremap <LEADER>cd :cd %:p:h<CR>:pwd<CR>
-
-" Toggle between .c (.cc, .cpp) and .h
-" ToggleHeader defined in $HOME/.vim/plugin/cpph.vim
-map <LEADER>h :call ToggleHeader()<CR>
 
 " Close file
 nnoremap <LEADER>q :bd<CR>

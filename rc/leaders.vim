@@ -1,10 +1,6 @@
 " Alternative for 'set autochdir'
 nnoremap <LEADER>cd :cd %:p:h<CR>:pwd<CR>
 
-" Toggle between .c (.cc, .cpp) and .h
-" ToggleHeader defined in $HOME/.vim/plugin/cpph.vim
-map <LEADER>h :call ToggleHeader()<CR>
-
 " Close file
 nnoremap <LEADER>q :bd<CR>
 
