@@ -77,5 +77,5 @@ let g:fzf_colors =
 
 " Search for files (using fd) with the same filename without extension. Useful
 " for switching between .c/cpp and .h files
-command! SameFilename call fzf#run({'source': 'fd', 'options': '-q' . expand('%:t:r')})
+command! SameFilename call fzf#run({'source': 'fd', 'sink': 'e', 'options': '-q' . expand('%:t:r')})
 nmap <LEADER>h :SameFilename<CR>
