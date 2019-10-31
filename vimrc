@@ -609,7 +609,6 @@ imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
 nmap <LEADER>f :Files<CR>
-nmap <LEADER>F :Files<CR>
 nmap <LEADER>C :Commands<CR>
 nmap <LEADER>b :Buffers<CR>
 nmap <LEADER>B :Buffers<CR>
@@ -672,6 +671,10 @@ let g:fzf_colors =
 " for switching between .c/cpp and .h files
 command! SameFilename call fzf#run({'source': 'fd', 'sink': 'e', 'options': '-q' . expand('%:t:r')})
 nmap <LEADER>h :SameFilename<CR>
+
+" Search everything including files get ignored by default
+command! FdNoIgnore call fzf#run({'source': 'fd --type f --no-ignore', 'sink': 'e'})
+nmap <LEADER>F :FdNoIgnore<CR>
 
 " ## golang.vim ##
 
