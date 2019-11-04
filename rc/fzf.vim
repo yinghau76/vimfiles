@@ -12,7 +12,6 @@ imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
 nmap <LEADER>f :Files<CR>
-nmap <LEADER>F :Files<CR>
 nmap <LEADER>C :Commands<CR>
 nmap <LEADER>b :Buffers<CR>
 nmap <LEADER>B :Buffers<CR>
@@ -55,10 +54,6 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-" Likewise, Files command with preview window
-command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
-
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
@@ -79,3 +74,7 @@ let g:fzf_colors =
 " for switching between .c/cpp and .h files
 command! SameFilename call fzf#run({'source': 'fd', 'sink': 'e', 'options': '-q' . expand('%:t:r')})
 nmap <LEADER>h :SameFilename<CR>
+
+" Search everything including files get ignored by default
+command! FdNoIgnore call fzf#run({'source': 'fd --type f --no-ignore', 'sink': 'e'})
+nmap <LEADER>F :FdNoIgnore<CR>
