@@ -1,0 +1,25 @@
+set visualbell
+set noerrorbells
+set surround
+
+" search
+set hlsearch                    " highlight searches
+set incsearch                   " do incremental searching, search as you type
+set ignorecase                  " ignore case when searching
+set smartcase                   " no ignorecase if Uppercase char present
+
+" encoding
+set encoding=utf-8
+
+" leader
+let mapleader=","
+
+set easymotion  " <ll>w
+
+" clear highlighted search
+nnoremap <ESC><ESC> :nohl<CR>
+
+nnoremap <LEADER>zd :action Debug<CR>
+nnoremap <LEADER>zr :action Run<CR>
+
+nnoremap <LEADER>bp :action ToggleLineBreakpoint<CR>
