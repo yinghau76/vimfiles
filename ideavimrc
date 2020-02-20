@@ -19,7 +19,14 @@ set easymotion  " <ll>w
 " clear highlighted search
 nnoremap <ESC><ESC> :nohl<CR>
 
-nnoremap <LEADER>zd :action Debug<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap ga :action GotoAction<CR>
+
+nnoremap <LEADER>fs :action FileStructurePopup<CR>
 nnoremap <LEADER>zr :action Run<CR>
+nnoremap <LEADER>zd :action Debug<CR>
+nnoremap <LEADER>rn :action RenameElement<CR>
+nnoremap <LEADER>ed :action ExternalJavaDoc<CR>
+nnoremap <LEADER>qd :action QuickJavaDoc<CR>
 
 nnoremap <LEADER>bp :action ToggleLineBreakpoint<CR>
