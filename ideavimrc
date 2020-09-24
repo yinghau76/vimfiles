@@ -23,10 +23,11 @@ nnoremap gi :action GotoImplementation<CR>
 nnoremap ga :action GotoAction<CR>
 
 nnoremap <LEADER>fs :action FileStructurePopup<CR>
-nnoremap <LEADER>zr :action Run<CR>
-nnoremap <LEADER>zd :action Debug<CR>
+nnoremap <LEADER><LEADER> :action FileStructurePopup<CR>
+nnoremap <LEADER>bb :action Build<CR>
+nnoremap <LEADER>rr :action Run<CR>
+nnoremap <LEADER>dd :action Debug<CR>
 nnoremap <LEADER>rn :action RenameElement<CR>
 nnoremap <LEADER>ed :action ExternalJavaDoc<CR>
 nnoremap <LEADER>qd :action QuickJavaDoc<CR>
-
 nnoremap <LEADER>bp :action ToggleLineBreakpoint<CR>
