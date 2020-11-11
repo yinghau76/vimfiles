@@ -98,7 +98,6 @@ Plug 'rhysd/devdocs.vim'
 Plug 'honza/vim-snippets'
 Plug 'epilande/vim-es2015-snippets'
 Plug 'epilande/vim-react-snippets'
-Plug 'SirVer/ultisnips'
 
 " Useful
 Plug 'bling/vim-airline'
