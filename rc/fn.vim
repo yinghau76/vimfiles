@@ -32,7 +32,7 @@ imap <F8> <C-O><F8>
 nmap <F9> :copen<CR>
 imap <F9> <C-O><F9>
 
-nmap <F10> :set nohls<CR>
+nmap <F10> :CocCommand clangd.switchSourceHeader
 imap <F10> <C-O><F9>
 
 " <F11> = toggle 'paste'
