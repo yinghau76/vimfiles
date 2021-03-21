@@ -104,7 +104,7 @@ Plug 'bling/vim-airline'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install({'tag':1})}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Editing
 Plug 'Lokaltog/vim-easymotion'
